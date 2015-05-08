@@ -1,1 +1,1193 @@
-hello
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+         <title>小微微信图文在线编辑助手</title>
+		<meta name="description" content="小微微信图文在线编辑助手" /> 
+		<meta name="keywords" content="编辑器,微信在线图文编辑器，html编辑器" />  
+        <meta charset="UTF-8">
+        <meta name="renderer" content="webkit|ie-comp|ie-stand">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/colorpicker.css">
+        <link rel="stylesheet" type="text/css" href="css/editor-min.css">
+        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="js/colorpicker-min.js" type="text/javascript"></script>
+    </head><body>
+
+        <div class="wxeditor">
+            <div class="clearfix">
+                <div class="left clearfix">
+                    <div class="tabbox clearfix">
+                        <ul class="tabs" id="tabs">
+                            <li class="editorlogo"><a href="http://mp.btxiaowei.net" target="_blank"><span style="font-size: 25px;">师院小微</span></a></li>
+                            <li><a class="current" href="#" tab="tab1">关注</a></li>
+                            <li><a href="#" tab="tab2">标题</a></li>
+                            <li><a href="#" tab="tab3">正文</a></li>
+                            <li><a href="#" tab="tab4">分割线</a></li>
+                            <li><a href="#" tab="tab5">阅读全文</a></li>
+                            <li><a href="#" tab="tab6">图文样式</a></li>
+                            <li><a href="#" tab="tab7">互推</a></li>
+                            <li><a href="#" tab="tab9">模板</a></li>
+                            <li><a href="#" tab="tab8">更多</a></li>
+                        </ul>
+                        <em class="fr"></em>
+                    </div>
+                    <div class="tplcontent">
+                        <div id="colorpickerbox"></div>
+                        <div>
+                                                    <div class="tab_con " id="tab1">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <p><img width="100%" src="./images/mmbizgif"></p>   </div>
+                                </li>
+                                <li>
+                                <div class="itembox"><p><img width="100%" src="./images/0"></p></div>
+                                </li>
+                                <li><div class="itembox">
+                                        <p><img width="100%" src="./images/0(1)"></p> </div>
+                                </li><li><div class="itembox">
+                                        <p><img width="100%" src="./images/0(2)"></p></div>
+                                </li><li><div class="itembox">
+                                        <p><img width="100%" src="./images/0(3)"></p></div>
+                                </li><li><div class="itembox">
+                                        <p><img width="100%" src="./images/0(4)"></p></div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px auto; border-radius: 2em; border: 1px solid rgb(0, 187, 236); font-family: 微软雅黑; font-size: 12px; -ms-word-wrap: normal; min-height: 1em; max-width: 600px; box-sizing: border-box !important;"><span class="wxqq-bg" style="padding: 2px 2px 2px 6px; color: rgb(255, 255, 255); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; border-top-left-radius: 2em; border-bottom-left-radius: 2em; background-color: rgb(0, 187, 236);"><span style="line-height: 0px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></span><img style="height: auto !important; visibility: visible !important; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;" src="http://i2.w.yun.hjfile.cn/doc/201311/d1cb6b2d4d3843d8ad8e77a79a337039.gif">&nbsp;<strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">提示</strong>：</span><span style="padding-left: 2px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span style="color: rgb(127, 127, 127); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">点击上方</span><span style="padding-left: 2px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">"</span><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span style="color: rgb(0, 112, 192); padding-left: 2px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">关注我</span></strong><span style="padding-left: 2px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">"</span><span style="color: rgb(0, 187, 236); padding-left: 2px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">↑</span><span style="color: rgb(127, 127, 127); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">免费订阅师院小微</span></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 5px; border: 1px solid rgb(0, 187, 236); color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 12px; white-space: normal; background-color: rgb(248, 247, 245);"><legend style="margin: 0px 10px;"><span class="wxqq-bg" style="padding: 5px 10px; border-radius: 5px; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; background-color: rgb(0, 187, 236);"><span style="color: rgb(255, 255, 255); line-height: 24px; font-family: 微软雅黑; font-size: 14px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">点击关注我</span><img style="border: 0px currentColor; height: auto !important; color: rgb(255, 255, 255); line-height: 24px; font-family: 微软雅黑; font-size: 14px; white-space: normal; visibility: visible !important; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;" src="./images/640" data-w="20" data-ratio="1.35" data-src="./images/0" data-s="300,640"><span style="color: rgb(255, 255, 255); line-height: 24px; font-family: 微软雅黑; font-size: 14px;">关注我哟</span> &nbsp;</span></legend><blockquote style="margin: 0px; padding: 0px;"><p style="padding: 0px; margin-top: 0px; margin-bottom: 0px;"><span style="color: rgb(255, 192, 0); line-height: 24px; font-family: 微软雅黑; font-size: 14px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></span><span style="color: rgb(255, 192, 0); line-height: 24px; font-family: 微软雅黑; font-size: 14px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(248, 247, 245);"></span><span style="color: rgb(127, 127, 127); line-height: 28px; font-family: 微软雅黑; font-size: 12px; white-space: pre-wrap; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(248, 247, 245);">定期推送</span><span style="color: rgb(255, 192, 0); line-height: 28px; font-family: 微软雅黑; font-size: 12px; white-space: pre-wrap; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(248, 247, 245);"><span style="color: rgb(127, 127, 127); line-height: 28px; font-family: 微软雅黑; font-size: 12px; white-space: pre-wrap; background-color: rgb(248, 247, 245);">，</span>本土文化</span><span style="color: rgb(127, 127, 127); line-height: 28px; font-family: 微软雅黑; font-size: 12px; white-space: pre-wrap; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(248, 247, 245);"> <span style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">，<span style="color: rgb(0, 176, 80); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">同城活动</span><span style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">，<span style="color: rgb(112, 48, 160); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">吃喝玩乐 </span>，<span style="color: rgb(0, 176, 240); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">资讯八卦</span>，<span style="color: rgb(146, 208, 80); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">商家优惠</span></span></span>等诸多优质内容，太原<span style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">最接地气</span>、<span style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">重服务</span>的本地微信平台！关注我们妥妥没错！</span><span style="color: rgb(127, 127, 127); line-height: 28px; font-family: 微软雅黑; font-size: 12px; white-space: pre-wrap; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></span></p></blockquote></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="text-align: left; vertical-align: top;"><section class="wxqq-borderBottomColor" style="width: 0px; margin-left: 48%; border-top-color: transparent !important; border-right-color: transparent !important; border-bottom-color: rgb(0, 187, 236); border-left-color: transparent !important; border-right-width: 0.8em !important; border-bottom-width: 0.8em; border-left-width: 0.8em !important; border-right-style: solid !important; border-bottom-style: solid; border-left-style: solid !important;"></section><section class="wxqq-bg" style="margin: 0px; border-radius: 2em; height: 2.5em; background-color: rgb(0, 187, 236);"><img style="margin: 0.5em 0.6em; height: 1.6em; vertical-align: top;" src="./images/640"><section style="width: 70%; text-align: center; overflow: hidden; font-size: 1.2em; margin-top: 0.3em; display: inline-block; white-space: nowrap;"><section style="color: rgb(255, 255, 255); display: inline-block;">点击上方</section><section style="color: rgb(64, 84, 115); display: inline-block;">“蓝色字”</section><section style="color: rgb(255, 255, 255); display: inline-block;">可关注我们！</section></section></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="border-width: 1px 0px; border-style: solid; border-color: rgb(0, 187, 236); margin: 0px; padding: 5px 15px; color: rgb(62, 62, 62); font-family: 微软雅黑; font-size: 14px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255); border-image-source: none;"><legend class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="padding: 4px 10px; border: 1px solid rgb(0, 187, 236); color: rgb(34, 34, 34); font-size: 16px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; border-image-source: none;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">如何关注</strong></legend><p style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important;">①复制“微信号或ID”，在“添加朋友”中粘贴搜索号码关注。</p><p style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important;">②点击微信右上角的“+”，会出现“添加朋友”，进入“查找公众号”，输入以下公众号的名字，即可找到。</p></fieldset>                                    </div>
+                                </li>
+                                <li><div class="itembox"><p><img width="100%" src="./images/mmbizgif(1)"></p> </div></li>
+                                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(5)"></p> </div></li>
+                                <li>
+                                    <div class="itembox">
+                                        <p><img style="width:100%;" src="./images/mmbizgif(2)"></p></div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width:100%;" src="./images/mmbizgif(3)"></p></div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width:100%;" src="./images/mmbizgif0"></p></div>
+                                </li>
+                 <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(6)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(7)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(8)"></p> </div></li>
+              
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(10)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(11)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(12)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(13)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(14)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(15)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(16)"></p> </div></li>
+                <li><div class="itembox"><p><img style="width: 100%;" src="./images/0(17)"></p> </div></li>
+
+
+
+                                <li>
+                                    <div class="itembox">
+                                        <fieldset style="margin: 60px 0px 0px; padding: 0px; border: 0px currentColor; text-align: center; box-sizing: border-box;"><section class="wxqq-bg" style="border-color: rgb(249, 110, 87); color: rgb(249, 110, 87); font-family: inherit; font-size: 1em; font-weight: inherit; text-decoration: inherit; box-sizing: border-box; background-color: rgb(249, 110, 87);"><section style="margin: 0px; padding: 16px; white-space: normal; position: relative; box-sizing: border-box; background-image: repeating-linear-gradient(135deg, transparent, transparent 4px, rgb(248, 247, 245) 4px, rgb(248, 247, 245) 12px);"><section style="left: 50%; top: -50px; width: 32px; text-align: center; line-height: 1; font-size: 50px; position: absolute; box-sizing: border-box; marin-left: -22px;">↑</section><section style="background: rgb(248, 247, 245); padding: 8px; font-family: inherit; margin-top: 0px; box-sizing: border-box;"><span style="font-size: 25px;">新朋友：</span>请点箭头所指文字关注我们<br><span style="font-size: 25px;">老朋友：</span>请点右上角按钮分享本文！</section></section></section></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="padding: 10px 20px; color: rgb(0, 187, 236); line-height: 1.5em; font-family: 微软雅黑; font-size: 14px; margin-top: 0px; margin-bottom: 0px; white-space: normal; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><span style="color: rgb(62, 62, 62); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="padding: 10px 0px 10px 20px; border: 3px solid rgb(0, 187, 236); width: 160px; line-height: 2em; font-size: 13px; float: left; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: inset 4px 4px 8px 1px rgba(0,0,0,0.247059);">微信号：师院小微</span></strong></span><strong class="wxqq-bg wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="padding: 10px; border: 2px solid rgb(0, 187, 236); color: rgb(255, 255, 255); line-height: 2em; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);">加关注</strong></p>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                                                    <div class="tab_con dn" id="tab2">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <fieldset style="margin: 0px; padding: 0px; border: 0px currentColor; text-align: center; color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box;"><section class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="border: 0.4em solid rgb(0, 187, 236); display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(248, 247, 245);"><section style="margin: -0.4em 0.5em; padding: 0.5em; border-top-color: rgb(248, 247, 245); border-bottom-color: rgb(248, 247, 245); border-top-width: 0.5em; border-bottom-width: 0.5em; border-top-style: solid; border-bottom-style: solid; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><section style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><section style="vertical-align: middle; display: inline-table; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><section class="wxqq-color" style="text-align: inherit; color: rgb(0, 187, 236); line-height: 1.5; font-family: inherit; font-size: 1em; text-decoration: inherit; vertical-align: middle; display: table; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">关注我<br style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">必是精品<br style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></section></section><section class="wxqq-bg" style="margin: 0px; border-radius: 50% 50% 0px; width: 3em; height: 3em; vertical-align: middle; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box; background-color: rgb(0, 187, 236);"><section style="margin: 0.2em; border-radius: 50%; border: 0.2em solid rgb(255, 255, 255); width: 2.6em; height: 2.6em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box; background-color: transparent;"><section style="text-align: inherit; color: rgb(255, 255, 255); line-height: 1; font-family: inherit; font-size: 2em; text-decoration: inherit; margin-top: 0.05em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">1</section></section></section></section><section class="main4" style="border-color: rgb(0, 187, 236); margin: 0.5em 0px; border-top-width: 1px; border-top-style: solid; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></section><section style="text-align: inherit; line-height: 1; font-family: inherit; font-size: 0.9em; text-decoration: inherit; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">这里可输入标题，自适应宽度</section></section></section></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p class="wxqq-borderTopColor wxqq-color" style='background-position: 0px 100%; margin: 25px 0px 20px; padding: 5px 0px 10px 7px; color: rgb(0, 187, 236); line-height: 35px; font-family: 微软雅黑; font-size: 22px; font-weight: 100; border-top-color: rgb(0, 187, 236); border-top-width: 2px; border-top-style: solid; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-image: url("http://mat1.gtimg.com/view/todayTopic/2013/aticletitBg.png"); background-repeat: repeat-x; background-color: rgb(255, 255, 255);'>一、这可输入标题</p>                                    </div>
+                                </li>
+                                <li><div class="itembox"><fieldset data-id="44" style="border:0 none;" class="laogui">
+    <p>
+        <span style="border-color:rgb(30, 155, 232); color:rgb(30, 155, 232); font-size:4em; font-weight:bolder; line-height:1em; vertical-align:middle">“</span><span  data-brushtype="text" style="color:inherit; font-size:2em; font-style:normal; line-height:1.2em; vertical-align:middle">标题</span><span  data-brushtype="text" style="border-color:rgb(30, 155, 232); color:rgb(30, 155, 232); font-size:2em; font-style:normal; line-height:1.2em; vertical-align:middle">标题</span><span style="border-color:rgb(30, 155, 232); color:rgb(30, 155, 232); font-size:4em; font-weight:bolder; line-height:1em; vertical-align:middle">”</span></p>
+</fieldset>
+</div></li>
+                  <li><div class="itembox">
+<fieldset data-id="46" style="border:0 none;" class="laogui">
+    <section style="text-align: left;">
+        <section style="display: inline-block; line-height: 20px; vertical-align: top; margin-top: 0.5em; text-align: center;"><img src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iaLEvswCQUUK0k4rPOicLo8SMm0pJOkgsVHg5qDgb0paoeAmW1YTgQRcQ/640" style="vertical-align:top; width:40px"/><br/><span class="135brush" data-brushtype="text" placeholder="小微团队" style="font-size:12px; line-height:30px">小微团队</span></section>
+        <section style="background-image:url(http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iaIlnFWUEOLQMyRuiaZqhFtx2ria5fDpE1ZJiaPttmsZzlWRkwiamEdRia0Rg/640);background-repeat: no-repeat; display:inline-block; margin-top:2.5em; vertical-align:top; width:20px;padding:10px 0px"></section>
+        <section class="135brush" data-ct="fix" style="display: inline-block;width: 40%; margin-top: 1.7em; margin-left: -0.4em; padding: 0.5em; background-color: rgb(255, 228, 200); border-radius: 0.6em; font-size: 1em; font-style: normal; color: inherit;">
+            <p placeholder="请输入对话">
+                请输入对话
+            </p>
+        </section>
+    </section>
+</fieldset></div></li>
+                  <li><div class="itembox">
+<fieldset data-id="3052" style="border:0 none;" class="laogui">
+    <blockquote style="max-width: 100%; padding: 5px 15px; border: none rgb(255, 129, 36);word-wrap: break-word !important; box-sizing: border-box !important;background-size: cover; background-image: url(https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPiaB5wTN4rt8SiaLwWPOGjzsz00t8qibibYMxV7vxJvA80XReHDajF0cqmLWMibicUuzlEXRpvGukdOVSxA/0);">
+        <section  style="color:#ffffff">
+            <p style="text-align: center; color: inherit;"><br/></p>
+            <p style="margin-top: 0px; margin-bottom: 0px; max-width: 100%; word-wrap: normal; min-height: 1em; white-space: pre-wrap; line-height: 1.75em; text-align: center; box-sizing: border-box !important;">
+                <span style="font-size:16px"><strong>雪花动态背景样式，请输入文字</strong></span></p>
+        </section>
+    </blockquote>
+</fieldset></div></li>
+                  <li><div class="itembox"><fieldset data-id="52" style="border:0 none;" class="laogui">
+    <blockquote style="white-space: normal; margin: 0px; padding: 12px 15px; border: 0px solid rgb(208, 218, 254); color: rgb(0, 45, 207); min-height: 1em; text-align: justify; background-image: -webkit-linear-gradient(left, rgb(207, 217, 255), rgb(158, 179, 253), rgb(207, 217, 255)); background-color: rgb(255, 255, 240);">
+        <section class="135brush" style="border-color: rgb(208, 218, 254); color: inherit;">
+            <p style="border-color: rgb(208, 218, 254); color: inherit;">
+                渐变背景内容
+            </p>
+        </section>
+    </blockquote>
+</fieldset></div></li>
+                  <li><div class="itembox"><fieldset data-id="1474" style="border:0 none;" class="laogui">
+    <section style="border-style: solid;border-width: 1px;border-left-width:60px;border-color:#A40000;color:#A40000;padding-left:20px;padding-top:10px;">
+        <section style="border-bottom:2px solid #A40000;clear:both;float:left;">
+            <section class="135brush" data-brushtype="text" style="font-size:24px;font-weight:bold;float:left;">
+                New /<br/>Spring
+            </section>
+            <section class="135brush" data-brushtype="text" style="font-size:20px;margin-left:45px;margin-top:5px;font-weight:bold;float:left;">
+                春.<br/>新年快乐2015
+            </section>
+        </section>
+        <p style="clear:both">
+            <br/>
+        </p>
+        <p class="135brush">
+            小微团队 &nbsp;&nbsp; HAPPY NEW YEAR&nbsp;<em>!!!</em>
+        </p>
+    </section>
+</fieldset></div></li>
+                  <li><div class="itembox">
+<fieldset data-id="2527" style="border:0 none;" class="laogui">
+    <section class="135bg" style="padding:20px;margin-left: auto;margin-right: auto;margin-top: 10px;background-image: url(https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPgOiaYOTqESWT5q8TRibbhbZmBEz2ztYStjwljjJEfakqX1WFDPIClDC5LwE2fmWia9iaxjONRHK9mniag/0);background-size: auto;background-position: 49% 50%;background-repeat: no-repeat;color:#FFF">
+        <section style="border: 2px solid rgb(33, 33, 34); height: 8px; border-radius: 99px; box-sizing: border-box; color: inherit;">
+            <section style="width: 35%; height: 100%; color: inherit; border-color: rgb(33, 33, 34); background-color: rgb(33, 33, 34);"></section>
+        </section>
+        <section style="margin: 5px auto; font-size: 85%; color: inherit;">
+            <section style="float: right; color: inherit;">
+                <span class="135brush" data-brushtype="text" style="color:rgb(38, 38, 38)">剩余 5 天</span>
+            </section>
+            <section style="color: inherit;">
+                <span class="135brush" data-brushtype="text" style="color:rgb(38, 38, 38)">已进行&nbsp;35%</span>
+            </section>
+        </section>
+        <p style="color: inherit;">
+            <br/>
+        </p>
+        <section class="135brush" data-style="color:rgb(38, 38, 38)" style="color: inherit;">
+            <p style="color: inherit;">
+                <span style="color:rgb(38, 38, 38)">小微团队</span>
+            </p>
+            <p style="color: inherit;">
+                <br/>
+            </p>
+            <p style="color: inherit;">
+                <span style="color:rgb(38, 38, 38)">以下是更多文字内容</span>
+            </p>
+        </section>
+    </section>
+</fieldset></div></li>
+                  <li><div class="itembox">
+<fieldset data-id="26" style="border:0 none;" class="laogui">
+    <section style="font-size: 16px; white-space: normal; margin:10px 0px; border: 1px solid rgb(201, 201, 201); text-align: center;">
+        <section style="border: 0.1em solid rgb(255, 202, 0); margin: 1em auto; width: 12em; height: 12em; border-radius: 6em;">
+            <section style="display: table; max-height: 11em; background-color: rgb(255, 202, 0); border-radius: 5.5em; height: 11em; width: 11em; margin: 0.5em;">
+                <section class="135brush" data-brushtype="text" style="display: table-cell; vertical-align: middle; max-height: 11em; margin: 1em; padding: 1em; color: rgb(255, 255, 255); font-size: 1.5em; line-height: 1.2em; ">
+                    小微<br/>编辑器
+                </section>
+            </section>
+        </section>
+        <section class="135brush" data-style="font-size: 1em;" style="display: inline-block; color: white; background-color: rgb(255, 202, 0); line-height: 1em; border-radius: 1em; margin: 1em 1em 2em; max-width: 100%; padding: 0.5em 1em; font-size: 1em;">
+            <p>
+                微信文章可以更精彩！
+            </p>
+        </section>
+    </section>
+</fieldset></div></li>
+                  <li><div class="itembox">
+<fieldset data-id="128" style="border:0 none;" class="laogui">
+    <fieldset style="border: none; margin: 0.8em 0px 0.3em; box-sizing: border-box; padding: 0px;">
+        <section class="135brush" data-brushtype="text" style="width: 2.5em; height: 2.5em; margin: 0px auto 1px; border-radius: 100%; line-height: 2.5em; box-sizing: border-box; overflow: hidden; font-size: 40px;  text-align: center; text-decoration: inherit; color: rgb(255, 255, 255); background-color: rgb(195, 39, 43); border-color: rgb(195, 39, 43);">
+            微
+        </section>
+        <section style="font-size: 1em;  font-weight: bold; text-align: center; text-decoration: inherit; color: rgb(255, 255, 255); border-color: rgb(195, 39, 43); box-sizing: border-box;">
+            <section style="width: 0px; margin: 0px auto; border-bottom: 0.5em solid rgb(195, 39, 43); border-top-color: rgb(195, 39, 43); border-left: 1em solid transparent ! important; border-right: 1em solid transparent ! important; box-sizing: border-box;height: 10px;"></section>
+            <section class="135brush" data-brushtype="text" style="padding: 0.5em; line-height: 1.2em; font-size: 1em;  box-sizing: border-box; background-color: rgb(195, 39, 43);">
+                做最好用的编辑器
+            </section>
+        </section>
+    </fieldset>
+</fieldset></div></li>
+                  <li><div class="itembox"></div></li>
+                                <li><div class="itembox">
+<fieldset style="clear: both; padding: 0px; border: 0px none; margin:5px 0px;">
+        <section style="border-top-width: 4px; border-top-style: solid; border-color: rgb(235, 103, 148); font-size: 1em; font-weight: inherit; text-decoration: inherit; color: rgb(255, 255, 255); box-sizing: border-box;">
+            <fieldset style="border: 0px rgb(235, 103, 148); margin: 2px 0px 0px; overflow: hidden; padding: 0px; color: inherit;">
+                <section style="display: inline-block; font-size: 1em; font-family: inherit; font-weight: inherit; text-align: inherit; text-decoration: inherit; color: inherit; border-color: rgb(235, 103, 148); background-color: transparent;">
+                    <section  data-bcless="darken" data-brushtype="text" style="display: inline-block; line-height: 1.4em; padding: 5px 10px; height: 32px; vertical-align: top; font-size: 16px; font-family: inherit; font-weight: bold; float: left; color: inherit; box-sizing: border-box !important; border-color: rgb(229, 58, 116); background: rgb(235, 103, 148);">
+                        请输入标题
+                    </section>
+                    <section style="display: inline-block; vertical-align: top; font-size: 16px; width: 0px; height: 0px; border-top-width: 32px; border-top-style: solid; border-top-color: rgb(235, 103, 148); border-right-width: 32px; border-right-style: solid; border-right-color: transparent; border-top-right-radius: 4px; border-bottom-left-radius: 2px; box-sizing: border-box !important; color: inherit;"></section>
+                </section>
+            </fieldset>
+        </section>
+    </fieldset>
+
+</div></li>
+                                <li><div class="itembox">
+<fieldset style="clear: both; padding: 0px; border: 0px none; margin:5px 0px;">
+    <section style="margin: 0.8em 0 0.5em 0;font-size: 16px;line-height: 32px; font-weight: bold;">
+        <section style="display: inline-block; float: left; width: 32px; height: 32px; vertical-align: top; text-align: center;  ">
+            <section style="display: table; width: 100%; color: inherit; border-color: rgb(72, 192, 163);">
+                <section style="display: table-cell;text-indent: 0; vertical-align: middle; font-style: normal; color: rgb(255, 255, 255); border-color: rgb(72, 192, 163);">
+                    <span  data-brushtype="text" style="color:rgb(198,198,199); font-size:50px">1</span>
+                </section>
+                <section style="width: 18px; height: 70px;margin-left:-8px; margin-top:5px;border-left:1px solid rgb(198,198,199);background-color: rgb(254,254,254); box-sizing: border-box;-webkit-transform: rotate(35deg);transform: rotate(35deg);"></section>
+            </section>
+        </section>
+        <section style="margin-left: 40px;padding-top:18px; font-style:normal;font-size:30px; color: #737373; border-color: rgb(72, 192, 163);">
+            <span  data-brushtype="text" style="color:#737373; font-size:20px">请输入标题</span>
+        </section>
+    </section>
+</fieldset>
+</div></li>
+                                <li><div class="itembox"><fieldset style="clear: both; padding: 0px; border: 0px none; margin:5px 0px;">
+    <fieldset style="border: 0px rgb(107, 77, 64); text-align: center; margin: 0.8em 0px 0.5em; box-sizing: border-box; padding: 0px;">
+        <section style="color: rgb(107, 77, 64); display: inline-block; width: 1em; font-size: 2.5em; font-weight: inherit; line-height: 1em; vertical-align: top; text-align: inherit; text-decoration: inherit; box-sizing: border-box; border-color: rgb(107, 77, 64);">
+            <section  data-brushtype="text" style="box-sizing: border-box; color: inherit; border-color: rgb(107, 77, 64);">
+                两字
+            </section>
+        </section>
+        <section class="135title" style="display: inline-block; margin-left: 0.5em; margin-top: 0.2em; text-align: left; box-sizing: border-box; color: inherit;">
+            <section style="box-sizing: border-box; color: inherit;">
+                <section  data-brushtype="text" style="background-color:rgb(107, 77, 64); border-color:rgb(107, 77, 64); box-sizing:border-box; color:rgb(224, 209, 202); display:inline-block; font-size:2em; font-weight:inherit; line-height:1; padding:0.1em; text-align:inherit; text-decoration:inherit">
+                    副标题1
+                </section>
+            </section>
+            <section style="color: rgb(107, 77, 64); margin: 0.5em 0px; font-size: 1.5em; line-height: 1em; font-weight: inherit; text-align: inherit; text-decoration: inherit; box-sizing: border-box; border-color: rgb(107, 77, 64);">
+                <section  data-brushtype="text" style="box-sizing: border-box; color: inherit; border-color: rgb(107, 77, 64);">
+                    副标题2
+                </section>
+            </section>
+        </section>
+    </fieldset>
+</fieldset>
+</div></li>
+                                <li><div class="itembox">
+<fieldset style="clear: both; padding: 0px; border: 0px none; margin:5px 0px;">
+    <section style="-webkit-box-reflect:below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), color-stop(0.2, transparent), to(rgba(250, 250, 250, 0.3)));  font-size: 30px;margin-top:15px;line-height:1em;">
+        <p style="display: block; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; text-align: center;  ">
+            <span style="font-family:微软雅黑"><strong><span data-brushtype="text" style="font-size:30px">文字倒影效果样式</span></strong></span>
+        </p>
+    </section>
+    <p>
+        <br/>
+    </p>
+</fieldset>
+</div></li>
+                                <li><div class="itembox">
+<fieldset data-id="132" style="border:0 none;" class="laogui">
+    <fieldset style="border: 0px; text-align: center; box-sizing: border-box; padding: 0px;">
+        <section style="display: inline-block; box-sizing: border-box; color: inherit;">
+            <section  data-brushtype="text" style="margin: 0.2em 0px 0px; padding: 0px 0.5em 5px; max-width: 100%; color: rgb(107, 77, 64); font-size: 1.8em; line-height: 1; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgb(107, 77, 64);">
+                小微团队
+            </section>
+            <section  data-brushtype="text" style="margin: 5px 1em; font-size: 1em; line-height: 1; color: rgb(107, 77, 64); box-sizing: border-box; border-color: rgb(107, 77, 64);">
+                做最易用的编辑器
+            </section>
+        </section>
+    </fieldset>
+</fieldset>
+</div></li>
+                                <li>
+                                    <div class="itembox">
+                                        <fieldset data-id="2178" style="border:0 none;" class="laogui">
+    <section data-bcless="true" style="font-size:20px; background: rgb(223, 240, 203);border:0 none;padding:0 0;margin:0 0;">
+        <span  data-brushtype="text" style="background:rgb(255, 255, 255); color:rgb(150, 206, 84); display:inline-block; padding:0px 15px 0px 0px">师院小微</span><span style="background:#fff; color:#FFF; display:inline-block; margin-left:5px">-</span><span style="background:#fff; color:#FFF; display:inline-block; margin-left:5px">-</span><span style="background:#fff; color:#FFF; display:inline-block; margin-left:5px">-</span>
+    </section>
+</fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p class="wxqq-borderTopColor" style="padding: 0px; color: rgb(62, 62, 62); line-height: 2em; font-family: 微软雅黑; margin-top: 0px; margin-bottom: 0px; border-top-color: rgb(0, 187, 236); border-top-width: 2px; border-top-style: solid; white-space: normal; -ms-word-wrap: normal; min-height: 1.5em; max-width: 100%; box-sizing: border-box !important;"><span class="wxqq-bg" style="padding: 5px 10px; color: rgb(255, 255, 255); font-size: 13px; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);">这可输入标题</span></p><p style='color: rgb(62, 62, 62); line-height: 25px; font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; white-space: normal; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);'><br></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section class="wxqq-borderBottomColor" style="border-color: rgb(0, 187, 236); margin: 0.5em 0px; width: 100%; color: rgb(62, 62, 62); line-height: 1em; overflow: hidden; font-family: 微软雅黑; border-bottom-width: 1px; border-bottom-style: solid; display: inline-block; white-space: normal; -ms-word-wrap: break-word !important; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><section class="wxqq-bg" style="padding: 0.2em; height: 2.8em; line-height: 1em; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);"><section style="color: rgb(255, 255, 255); line-height: 1em; font-family: inherit; font-size: 2em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">1</section></section><section class="wxqq-color" style="padding: 0.2em; color: rgb(0, 187, 236); line-height: 1em; font-family: inherit; font-size: 1.2em; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">这可输入标题</section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section class="main_1" style="color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><section style="margin: 0.8em 0px 0.5em; overflow: hidden; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><section class="wxqq-bg" style="padding: 0.3em 0.5em; height: 2em; text-align: center; color: white; line-height: 1.4em; font-size: 1em; vertical-align: top; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">第一步</strong></section><section class="wxqq-borderLeftColor" style="width: 0.5em; height: 2em; vertical-align: top; border-top-color: transparent !important; border-right-color: rgb(0, 187, 236); border-bottom-color: transparent !important; border-left-color: rgb(0, 187, 236); border-top-width: 1em !important; border-bottom-width: 1em !important; border-left-width: 0.5em; border-top-style: solid !important; border-bottom-style: solid !important; border-left-style: solid; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></section></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="margin: 0.8em 0px 0.5em; color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span class="wxqq-bg" style="padding: 0.3em 0.5em; border-radius: 0.5em; text-align: center; color: white; font-size: 1em; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: 0.2em 0.2em 0.1em rgb(165,165,165); background-color: rgb(0, 187, 236);"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span style="font-family: inherit; font-size: 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">1、这里输入标题</span></strong></span></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: rgb(0, 187, 236); line-height: 18px; font-family: 微软雅黑; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%;"><span class="wxqq-borderBottomColor" style="margin: 0px; padding: 0px 2px 3px; color: rgb(0, 187, 236); line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-wrap: break-word !important; max-width: 100%;"><span class="wxqq-bg" style="margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-wrap: break-word !important; max-width: 100%; background-color: rgb(0, 187, 236);">1</span></span><span class="wxqq-borderBottomColor" style="margin: 0px; padding: 0px 2px 3px; color: rgb(38, 38, 38); line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-wrap: break-word !important; max-width: 100%;"><strong class="wxqq-color" style="color: rgb(60, 117, 45); line-height: 24px; -ms-word-wrap: break-word !important; max-width: 100%;">这可输入标题</strong></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section class="wxqq-borderTopColor wxqq-borderBottomColor" style="height: 2em; line-height: 1em; border-top-color: rgb(0, 187, 236); border-right-color: transparent; border-bottom-color: rgb(0, 187, 236); border-top-width: 1.1em; border-right-width: 1em; border-bottom-width: 1.1em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; display: inline-block; max-width: 100%; box-sizing: border-box;"><section style="padding: 0.5em 1em; height: 2em; color: white; margin-top: -1em; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 100%;"><strong>这里输入标题</strong></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="margin: 0.8em 0px 0.5em;"><section class="wxqq-bg" style="border-radius: 2em; width: 2.5em; height: 2.5em; text-align: center; vertical-align: top; display: inline-block; background-color: rgb(0, 187, 236);"><section style="width: 100%; display: table;"><section style="color: rgb(255, 255, 255); line-height: 1.3em; font-family: inherit; font-size: 2em; font-style: normal; font-weight: bolder; vertical-align: middle; display: table-cell;">1</section></section></section><section style="padding-top: 0.3em; margin-left: 0.7em; display: inline-block;"><section class="wxqq-color" style="color: rgb(0, 187, 236); line-height: 1.4em; font-family: inherit; font-size: 1.5em; font-style: normal;">请输入标题</section></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: rgb(0, 187, 236); line-height: 18px; font-family: 微软雅黑; font-size: 16px; font-weight: normal; white-space: normal;"><span style="padding: 0px 2px 3px; line-height: 28px; float: left; display: block;"><span class="wxqq-bg" style="padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);">1</span><strong class="wxqq-color">这可输入标题</strong></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: rgb(0, 187, 236); line-height: 18px; font-family: 微软雅黑; font-size: 16px; font-weight: normal; white-space: normal;"><span style="padding: 0px 2px 3px; line-height: 28px; float: left; display: block;"><span class="wxqq-bg" style="padding: 4px 10px; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);">2</span><strong class=" wxqq-color">这可输入标题</strong></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="text-align: center; font-size: 1em; vertical-align: middle; white-space: nowrap;"><section class="wxqq-borderTopColor wxqq-borderBottomColor" style="border-width: 1.5em; border-style: solid; border-color: rgb(0, 187, 236) transparent; margin: 0px 1em; height: 0px; white-space: nowrap;"></section><section style="border-width: 1.3em; border-style: solid; border-color: rgb(255, 255, 255) transparent; margin: -2.75em 1.65em; height: 0px; white-space: nowrap;"></section><section class="wxqq-borderTopColor wxqq-borderBottomColor" style="border-width: 1.1em; border-style: solid; border-color: rgb(0, 187, 236) transparent; margin: 0.45em 2.1em; height: 0px; vertical-align: middle; white-space: nowrap;"><section style="padding: 0px 1em; color: white; line-height: 1em; overflow: hidden; font-size: 1.2em; margin-top: -0.5em; white-space: nowrap; max-height: 1em;">请输入标题</section></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 8px 0px 0px; padding: 0px; border: 0px currentColor; height: 32px; text-align: justify; color: rgb(62, 62, 62); line-height: 18px; font-family: 微软雅黑; font-size: 16px; font-weight: normal; white-space: normal;"><span class="wxqq-borderBottomColor" style="padding: 0px 2px 3px; color: rgb(0, 112, 192); line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;"><span class="wxqq-bg" style="padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);">序号.</span><strong class="wxqq-color" style="color: rgb(0, 187, 236);">标题党</strong></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section class="wxqq-borderBottomColor" style="margin: 0px; padding: 1px 0px; height: 35px; text-align: justify; color: rgb(48, 55, 64); line-height: 2px; font-family: 微软雅黑; font-size: 20px; font-weight: normal; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span class="wxqq-bg" style="padding: 8px 8px 2px; float: left; display: block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);"><strong style="color: rgb(255, 255, 255); line-height: 24px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">1</strong></span><p style="padding: 0px; line-height: 2em; margin-top: 0px; margin-bottom: 0px; float: left; white-space: pre-wrap; -ms-word-wrap: break-word !important; min-height: 1.5em; max-width: 100%; box-sizing: border-box !important;"><span style="padding: 5px;"><strong class="wxqq-color">标题</strong><span style="color: rgb(127, 127, 127); font-size: 14px;"> - 副标题副标题副标题</span></span><br style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></p></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; margin-top: 0px; margin-bottom: 0px; white-space: normal; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><span class="wxqq-bg" style="padding: 4px 10px; border-radius: 0.5em 3em / 4em 1em 2em; text-align: justify; color: rgb(255, 255, 255); font-family: 微软雅黑, sans-serif; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: 4px 4px 2px rgb(165,165,165); background-color: rgb(0, 187, 236);"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">请输入标题</span></strong></strong></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><strong style="color: rgb(255, 255, 255); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span style="display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; text-shadow: 1px 0px 4px rgb(0,187,236), 0px 1px 4px rgb(0,187,236), 0px -1px 4px rgb(0,187,236), -1px 0px 4px rgb(0,187,236);" glowfont="display:inline-block; color:white; text-shadow:1px 0 4px #ff0000,0 1px 4px #ff0000,0 -1px 4px #ff0000,-1px 0 4px #ff0000;filter:glow(color=#ff0000,strength=3)">请输入标题</span></strong><br></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderLeftColor" style="margin: 5px 0px 0px; padding: 10px; border-radius: 4px; color: rgb(255, 255, 255); line-height: 25px; font-family: arial, helvetica, sans-serif; font-size: 14px; border-left-color: rgb(0, 187, 236); border-left-width: 10px; border-left-style: solid; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: 2px 2px 4px rgb(153,153,153); text-shadow: 0px 1px 0px rgb(34,95,135); background-color: rgb(55, 57, 57);"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span style="font-family: 微软雅黑; font-size: 16px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">1、这里输入标题</span></strong></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p class="wxqq-color wxqq-borderLeftColor" style="border-width: 0px 0px 0px 5px; margin: 5px 0px 13px; padding: 0px 10px; color: rgb(0, 187, 236); line-height: 25px; font-family: 微软雅黑; font-size: 16px; border-left-color: rgb(0, 187, 236); border-left-style: solid; white-space: normal; -webkit-font-smoothing: antialiased;">这可输入标题</p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 8px 0px 0px; padding: 0px; border: 0px currentColor; height: 32px; line-height: 18px; font-family: 微软雅黑, 宋体, tahoma, arial; font-size: 12px; font-weight: normal; white-space: normal;"><span class="wxqq-color wxqq-borderBottomColor" style="padding: 0px 2px 3px; color: rgb(0, 187, 236); line-height: 28px; font-family: 微软雅黑, sans-serif !important; font-size: 14px; font-weight: bold; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;">这可输入标题</span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 8px 0px 0px; padding: 0px; height: 32px; line-height: 18px; font-family: 微软雅黑, 宋体, tahoma, arial; font-size: 12px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;"><span class="wxqq-color wxqq-borderBottomColor" style="padding: 0px 2px 3px; color: rgb(0, 187, 236); line-height: 28px; font-family: 微软雅黑, sans-serif !important; font-size: 14px; font-weight: bold; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;">这可输入标题</span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 0px; padding: 0px; color: rgb(255, 255, 255); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: pre-wrap; -ms-word-wrap: break-word !important; min-height: 1.5em; max-width: 100%; font-stretch: normal; -webkit-text-stroke-width: 0px;"><strong><span class="wxqq-bg" style="padding: 4px 10px; color: rgb(255, 255, 255); font-family: 微软雅黑,Microsoft YaHei; margin-right: 8px; -ms-word-wrap: break-word !important; max-width: 100%; background-color: rgb(0, 187, 236);">这可输入标题</span></strong></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: 微软雅黑; font-size: 16px; font-weight: normal; white-space: normal;"><span style="padding: 0px 2px 3px; line-height: 28px; float: left; display: block;"><span class="wxqq-bg" style="padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);">这可输入标题</span></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="margin: 0px; padding: 0px; color: rgb(255, 255, 255); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: pre-wrap; -ms-word-wrap: break-word !important; min-height: 1.5em; max-width: 100%; font-stretch: normal; -webkit-text-stroke-width: 0px;"><strong><span class="wxqq-bg" style="padding: 4px 10px; border-radius: 5px; color: rgb(255, 255, 255); font-family: 微软雅黑,Microsoft YaHei; margin-right: 8px; -ms-word-wrap: break-word !important; max-width: 100%; background-color: rgb(0, 187, 236);">这可输入标题</span></strong></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="./images/0(18)"></p>                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itembox">
+                                        <fieldset class="ng-scope" style="margin: 1em 0px 2em; border: 0px currentColor;"><section style="border-color: rgb(249, 110, 87); text-align: center; color: rgb(255, 255, 255); font-family: inherit; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; background-color: transparent;"><section class="wxqq-bg" style="margin: 0px auto; border-radius: 100%; width: 2em; height: 2em; background-color: rgb(249, 110, 87);"><section style="padding: 0px 0.5em; text-align: center; color: rgb(255, 255, 255); line-height: 2; font-family: inherit; font-size: 1em; font-style: normal; display: inline-block;">1</section></section><section style="margin-top: -1em; margin-bottom: 1em;"><section class="wxqq-borderTopColor" style="border-color: rgb(249, 110, 87); width: 35%; border-top-width: 1px; border-top-style: solid; float: left;"></section><section class="wxqq-borderTopColor" style="border-color: rgb(249, 110, 87); width: 35%; border-top-width: 1px; border-top-style: solid; float: right;"></section></section></section></fieldset>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                                                    <div class="tab_con dn" id="tab3">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <fieldset style="margin: 0.5em 0px; padding: 0px; border: 0px currentColor; color: rgb(68, 68, 68); line-height: 25px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><section style="height: 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box;"><section class="wxqq-borderTopColor wxqq-borderLeftColor" style="border-color: rgb(0, 187, 236); width: 1.5em; height: 16px; border-top-width: 0.4em; border-left-width: 0.4em; border-top-style: solid; border-left-style: solid; float: left; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></section><section class="wxqq-borderTopColor wxqq-borderRightColor" style="border-color: rgb(0, 187, 236); width: 1.5em; height: 16px; border-top-width: 0.4em; border-right-width: 0.4em; border-top-style: solid; border-right-style: solid; float: right; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></section></section><section class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: -0.8em 0.1em -0.8em 0.2em; padding: 0.8em; border-radius: 0.3em; border: 1px solid rgb(0, 187, 236); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box;"><section style="margin: 0px; padding: 0px; border: currentColor; text-align: inherit; color: rgb(68, 68, 68); line-height: 1.4; font-family: inherit; font-size: 1em; text-decoration: inherit; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box !important; background-image: none;">可在这输入内容， 关注我们 -- 小微在线编辑助手</section></section><section style="height: 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box;"><section class="wxqq-borderBottomColor wxqq-borderLeftColor" style="border-color: rgb(0, 187, 236); width: 1.5em; height: 16px; border-bottom-width: 0.4em; border-left-width: 0.4em; border-bottom-style: solid; border-left-style: solid; float: left; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></section><section class="wxqq-borderRightColor wxqq-borderBottomColor" style="border-color: rgb(0, 187, 236); width: 1.5em; height: 16px; border-right-width: 0.4em; border-bottom-width: 0.4em; border-right-style: solid; border-bottom-style: solid; float: right; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></section></section></fieldset>                                    </div>
+                                </li>
+
+                                <li><div class="itembox">
+<fieldset data-id="2185" style="border:0 none;" class="laogui">
+    <section style="color: inherit; font-size: 16px; padding: 5px 10px 0px 35px; margin-left: 27px; border-left-width: 2px; border-left-style: dotted; border-left-color: rgb(228, 228, 228);">
+        <section class="autonum" style="width: 32px; height: 32px; margin-left: -53px; margin-top: 23px; color: rgb(202, 251, 215); text-align: center; line-height: 32px; border-top-left-radius: 16px; border-top-right-radius: 16px; border-bottom-right-radius: 16px; border-bottom-left-radius: 16px; background: rgb(14, 184, 58);" data-original-title="" title="">
+            2
+        </section>
+        <section  style="margin-top: -30px;padding-bottom: 10px; color: inherit;">
+            <p style="clear: both; line-height: 1.5em; font-size: 14px; color: inherit;">
+                <span style="color:inherit; font-size:16px"><strong class="135title" style="color:inherit">如何找到【师院小微】？</strong></span>
+            </p>
+            <p style="clear: both; line-height: 1.5em; font-size: 14px; color: inherit;">
+                微信搜索“师院小微”，点击第一条搜索结果关注即可</p>
+        </section>
+    </section>
+</fieldset>
+</div></li>
+                                <li><div class="itembox">
+<fieldset data-id="30" style="border:0 none;" class="laogui">
+    <fieldset style="margin: 0px; padding: 5px; border: 1px solid rgb(204, 204, 204); max-width: 100%; color: rgb(62, 62, 62); line-height: 24px; text-align: justify; box-shadow: rgb(165, 165, 165) 5px 5px 2px; background-color: rgb(250, 250, 250);">
+        <legend style="margin: 0px; padding: 0px;  text-align: left;margin-left: 20px;width: auto;">
+            <strong><strong style="background-color:rgb(255, 255, 245); color:rgb(102, 102, 102); line-height:20px"><span  data-brushtype="text" style="background-color:red; border-bottom-left-radius:3em 1em; border-bottom-right-radius:0.5em 2em; border-top-left-radius:0.5em 4em; border-top-right-radius:3em 1em; box-shadow:rgb(165, 165, 165) 4px 4px 2px; color:white; max-width:100%; padding:4px 10px; text-align:justify">公告通知</span></strong></strong> &nbsp; &nbsp;
+        </legend>
+        <section  data-style="margin-top: 2px; margin-bottom: 0px; padding: 0px; max-width: 100%; min-height: 1.5em; line-height: 2em;font-weight:bold;">
+            <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; min-height: 1.5em; line-height: 2em;">
+                各位小伙伴们，使用<span style="color:inherit"><strong>谷歌与火狐浏览器</strong></span>，可获得与手机端一致的显示效果。ie内核的低版本浏览器可能有不兼容的情况</p>
+        </section>
+    </fieldset>
+</fieldset>
+</div></li>
+                                <li><div class="itembox">
+<fieldset data-id="7" style="border:0 none;" class="laogui">
+    <blockquote style="white-space: normal; margin: 5px 0px 0px; padding: 10px; max-width: 100%; border-left-width: 5px; border-left-style: solid; border-left-color: rgb(0, 176, 80); line-height: 25px; color: rgb(102, 102, 102);">
+        <p  placeholder="请输入内容内容。">
+            请输入内容</p>
+    </blockquote>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="4012" style="border:0 none;" class="laogui">
+    <fieldset style="margin: 0.5em 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); line-height: 25px; white-space: normal; border: 0px rgb(238, 222, 176); word-wrap: break-word !important;">
+        <section style="margin: 0px; padding: 0px; width: 100%; box-sizing: border-box;display: inline-block; text-align: center; word-wrap: break-word !important;">
+            <img src="http://mmbiz.qpic.cn/mmbiz/ugnYPLVSd8sGQrPwFE4piaiacUlJzd4hzQdOmBvuLH3B2u7ibUpZtb3pNswd8rkCPZrbYbiayWzsIbuLX3hL7yW2sw/0" style="box-sizing:border-box; color:inherit; height:65px; margin:0px auto; padding:0px; visibility:visible !important; width:60px; word-wrap:break-word !important"/>
+        </section>
+        <section style="margin: -2.3em 0px 0px; padding: 2em 0px 0px; max-width: 100%; box-sizing: border-box; min-height: 15em; font-size: 1em;  font-weight: inherit; text-decoration: inherit; color: rgb(131, 104, 28); border-color: rgb(238, 222, 176); word-wrap: break-word !important; background-image: url(http://mmbiz.qpic.cn/mmbiz/ugnYPLVSd8sGQrPwFE4piaiacUlJzd4hzQAFQAnTZcCvVibdU0HJP8yRxNE4EKn3BzPNFfiaPfYjPrKSmw3R37UhTg/0); background-color: rgb(238, 222, 176); background-repeat: repeat;">
+            <section style="margin: 0.3em auto; padding: 0.5em; max-width: 100%; box-sizing: border-box; width: 7em; height: 3.5em; line-height: 2em; overflow: hidden; -webkit-transform: rotate(-5deg); font-size: 32px;  font-weight: inherit; text-align: center; text-decoration: inherit; color: inherit; word-wrap: break-word !important; background-image: url(http://mmbiz.qpic.cn/mmbiz/ugnYPLVSd8sGQrPwFE4piaiacUlJzd4hzQJcg4iaDEDM8hlMPKhqt7PlOVBRTMMGIcPJl4JsjIYaYzAG1XT064fwg/0); background-repeat: no-repeat;background-size: contain;">
+                <section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+                    <span class="135brush" data-brushtype="text" style="box-sizing:border-box; color:inherit; margin:0px; max-width:100%; padding:0px; word-wrap:break-word !important">公告</span>
+                </section>
+            </section>
+            <section style="margin: 0px; padding: 1em; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+                <section class="135brush" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; color: inherit;">
+                    <p>
+                        本背景可以换色哦~</p>
+                </section>
+            </section>
+        </section>
+    </fieldset>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="23" style="border:0 none;" class="laogui">
+    <blockquote class="135brush" style="orphans: 2; white-space: normal; widows: 2; font-size: 14px; line-height: 22.39px;margin: 10px 0px; padding:15px 20px 15px 45px; outline: 0px; border: 0px currentcolor; color: rgb(62, 62, 62); vertical-align: baseline; background-image: url(http://www.wx135.com/img/bg/left_quote.jpg); background-color: rgb(241, 241, 241); background-position: 1% 5px; background-repeat: no-repeat no-repeat;">
+        这里插入分号引用样式的内容。
+    </blockquote>
+</fieldset></div></li>
+                                <li><div class="itembox">
+                                <fieldset data-id="29735" style="border:0 none;" class="laogui">
+    <section style="width:92px;margin-bottom:0px;">
+        <p style="text-align: center; color: inherit; line-height: 2em;">
+            <span style="border-color:rgb(255, 129, 36); color:rgb(255, 129, 36); font-size:16px"><strong style="border-color:rgb(255, 129, 36); color:inherit">小微团队</strong></span>
+        </p>
+    </section>
+    <fieldset style="margin-top: 0px; padding: 0px 5px; line-height: 10px; color: inherit; border: 1px solid rgb(255, 129, 36);">
+        <section style="padding: 0px; font-size: 16px; color: inherit; height: 8px; margin: -8px 0px 0px 140px; width: 65%; background-color: rgb(254, 254, 254);">
+            <section style="width: 8px; height: 8px; border-radius: 100%; line-height: 1; box-sizing: border-box; font-size: 18px; text-decoration: inherit; border-color: rgb(255, 129, 36); display: inline-block; margin: 0px; color: inherit; background-color: rgb(255, 129, 36);"></section>
+        </section>
+        <section class="135brush" data-style="text-indent: 2em;" style="padding: 0px; line-height: 2em; color: rgb(62, 62, 62); font-size: 14px; margin: 15px;">
+            <p style="text-indent: 2em; color: inherit;">
+                小微编辑工具，大量节省您排版的时间，让工作更轻松高效。</p>
+        </section>
+        <section style="padding: 0px; background-color: rgb(254, 254, 254); font-size: 16px; color: inherit; text-align: right; height: 10px; margin: 0px 0px -4px 25px; width: 65%;">
+            <section style="margin: 0px auto 1px; border-radius: 100%; line-height: 1; box-sizing: border-box; text-decoration: inherit; background-color: rgb(255, 129, 36); border-color: rgb(255, 129, 36); display: inline-block; height: 8px; width: 8px; color: inherit;"></section>
+        </section>
+    </fieldset>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="704" style="border:0 none;" class="laogui">
+    <section style="margin: 10px 0px; border-radius: 4px; padding: 50px 0px; color: rgb(255, 255, 255); text-align: center; border-color: rgb(255, 129, 36); background-color: rgb(255, 129, 36);">
+        <span class="135brush" data-brushtype="text" style="border-radius:4px; border:1px solid rgb(251, 251, 251); color:inherit; font-size:18px; line-height:42px; padding:10px 15px">小微团队</span>
+        <section class="135brush" style="margin-top: 30px; color: inherit;">
+            <p style="color: inherit;">
+                努力作出最易用的图文排版工具</p>
+            <p style="color: inherit;">
+                <span style="background-color:rgb(255, 129, 36); color:rgb(255, 255, 255); font-family:微软雅黑; font-size:14px; line-height:22.3999996185303px; text-align:center">kefu@btxiaowei.net</span></p>
+        </section>
+    </section>
+</fieldset></div></li>
+                                <li><div class="itembox"><fieldset data-id="2446" style="border:0 none;" class="laogui">
+    <section style="padding: 0px 8px; border-left-width: 3px; border-left-style: solid; border-color: rgba(163, 163, 163, 0.843137); font-size: 22px; font-weight: inherit; text-align: inherit; text-decoration: inherit; box-sizing: border-box;">
+        <section style="line-height: 1.4; box-sizing: border-box; color: inherit;">
+            <section class="135brush" data-brushtype="text" style="border-color: rgb(117, 117, 118); color: rgb(117, 117, 118); font-size: 20px;">
+                标题</section>
+        </section>
+        <section class="135brush" data-style="border-color: rgb(117, 117, 118); color: inherit; font-size: 12px;" style="color: rgb(117, 117, 118); line-height: 1.4; margin-top: 5px; padding-left: 3px; font-size: 14px; font-weight: inherit; text-align: inherit; text-decoration: inherit; box-sizing: border-box; border-color: rgb(117, 117, 118);">
+            <p style="border-color: rgb(117, 117, 118); color: inherit; font-size: 12px;">
+                内容描述</p>
+        </section>
+    </section>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="50638" style="border:0 none;" class="laogui">
+    <section style="width:100%;text-align:center;">
+        <section style="width: 100%; background-color: rgb(255, 255, 255); padding: 0px; border-top-width: 2px; border-top-style: solid; border-top-color: rgb(172, 29, 16); border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(172, 29, 16); color: inherit; font-size: 14px; margin: 15px 0px; display: inline-block; ">
+            <section class="135brush" data-style="line-height:24px;color:rgb(89, 89, 89); font-size:20px;" style="padding: 30px; margin: -15px 15px; border-right-width: 2px; border-right-style: solid; border-right-color: rgb(172, 29, 16); border-left-width: 2px; border-left-style: solid; border-left-color: rgb(172, 29, 16); color: inherit; ">
+                <p style="line-height: 24px; text-align: center; color: rgb(172, 29, 16); border-color: rgb(172, 29, 16); ">
+                    <span style="color:rgb(12, 12, 12); font-size:16px"><strong style="color:inherit">请输入内容</strong></span>
+                </p>
+            </section>
+        </section>
+    </section>
+</fieldset></div></li>
+                                <li><div class="itembox">
+                                <fieldset data-id="4013" style="border:0 none;" class="laogui">
+    <fieldset style="margin: 0.5em 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-family: inherit; font-size: medium; line-height: 25px; white-space: normal; border: none rgb(254, 253, 254); word-wrap: break-word !important;">
+        <section style="margin: 0px; padding: 3.8em 0px; max-width: 100%; box-sizing: border-box; width: 12.5em; height: 12.5em; float: right; text-align: center; word-wrap: break-word !important; background-image: url(http://mmbiz.qpic.cn/mmbiz/ugnYPLVSd8u7P43JibrNCMp1ZAASjRDmxzOF85PQ6kXpnpasOJyVaLRuialiaxw4Sgn7FJOoMXiaJDGLslic8jyaDeQ/0); background-size: cover;">
+            <section style="margin: 0px 0px 0px 16px; padding: 0px; max-width: 100%; box-sizing: border-box; width: 140px; overflow: hidden; -webkit-transform: rotate(-13deg); font-size: 22px; font-family: inherit; font-weight: inherit; text-decoration: inherit; color: rgb(102, 102, 102); word-wrap: break-word !important;">
+                <section class="135brush" data-brushtype="text" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; color: inherit;">
+                    Tips</section>
+            </section>
+            <section style="margin: 10px 20px; padding: 0px; max-width: 100%; box-sizing: border-box; width: 150px; overflow: hidden; -webkit-transform: rotate(-15deg); font-size: 14px; font-family: inherit; font-weight: inherit; text-decoration: inherit; color: rgb(102, 102, 102); word-wrap: break-word !important;">
+                <section class="135brush" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; color: inherit;">
+                    <p>
+                        我是图片不能换色哦</p></section>
+            </section>
+        </section>
+    </fieldset>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="53787" style="border:0 none;" class="laogui">
+    <fieldset style="border:none;margin:0.8em 5% 0.3em;">
+        <section class="135brush" data-brushtype="text" style="color: #FF6450;font-size: 20px;letter-spacing: 3px;padding: 9px 4px 14px 4px;text-align: center;margin: 0 auto;border:4px solid #FF6450;-webkit-border-radius: 8px;border-radius: 8px;">
+            理念<span class="135brush" data-brushtype="text" style="display:block; font-size:10px; line-height:12px">PHILOSOPHY</span></section>
+        <section style="width: 0px; margin-right: auto; margin-left: auto; border-top-width: 0.6em; border-top-style: solid; border-bottom-color: #FF6450; border-top-color:#FF6450; height: 10px; border-left-width: 0.7em !important; border-left-style: solid !important; border-left-color: transparent !important; border-right-width: 0.7em !important; border-right-style: solid !important; border-right-color: transparent !important;"></section>
+    </fieldset>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="7282" style="border: 0px none; padding: 0px;" class="laogui">
+    <section>
+        <section style="width:48%;display:inline-block;float:left;">
+            <section style="padding:20px 25px;border:1px solid #e7e7e7;text-align:center;">
+                <p>
+                    <img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPiazjsibqzMEbFXfnLK8n31vao2YXGwz6wxT8wBGG0FRkuzvGvIztzq8Re1R50omeH8KoicjL2HBx7gQ/0" style="height:50px; margin-bottom:15px"/></p>
+                <h3 class="134title" style="font-size:16px;font-weight:bold;margin:0 0 10px 0;">小微编辑器</h3>
+                <section class="135brush" data-style="clear:none;">
+                    <p style="clear:none;margin:0 0;line-height:1.5em;">生而排版</p>
+                    <p style="clear:none;margin:0 0;line-height:1.5em;"><span style="text-align:center">为你而美</span></p>
+                </section>
+            </section>
+        </section>
+        <section style="margin-left:4%;width:48%;display:inline-block;text-align:center;">
+            <section style="padding:20px 25px;border:1px solid #e7e7e7;">
+                <p>
+                    <img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPiazjsibqzMEbFXfnLK8n31vao2YXGwz6wxT8wBGG0FRkuzvGvIztzq8Re1R50omeH8KoicjL2HBx7gQ/0" style="height:50px; margin-bottom:15px"/></p>
+                <h3 class="134title" style="font-size:16px;font-weight:bold;margin:0 0 10px 0;">
+                    秒刷
+                </h3>
+                <section class="135brush" data-style="clear:none;margin:0 0;line-height:1.5em;">
+                    <p style="clear:none;margin:0 0;line-height:1.5em;">
+                        一键排版
+                    </p>
+                    <p style="clear:none;margin:0 0;line-height:1.5em;">
+                        珍惜生命
+                    </p>
+                </section>
+            </section>
+        </section>
+        <p style="height:2px;clear:both;">
+            <br/></p>
+    </section>
+</fieldset></div></li>
+                         <li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 10px; border: 6px double rgb(0, 187, 236); color: rgb(68, 68, 68); font-family: 微软雅黑; -ms-word-break: break-all; -ms-word-wrap: break-word !important; box-sizing: border-box !important;"><p class="ue_t" style="padding: 0px; border: 0px currentColor; margin-top: 0px; margin-bottom: 0px;">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style='color: rgb(62, 62, 62); line-height: 25px; font-family: "Microsoft YaHei"; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);'><section style="margin: 0px; padding: 0.5em; border: 1px solid rgb(226, 226, 226); text-align: right; line-height: 1em; font-size: 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: 0px 1em 0.1em -0.8em #e2e2e2;"><section style="width: 1.2em; color: rgb(120, 124, 129); line-height: 1.2em; font-family: inherit; font-size: 0.7em; margin-right: 0.2em; vertical-align: top; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">展现微信营销魅力</section><section style="width: 1.2em; color: rgb(120, 124, 129); line-height: 1.2em; font-family: inherit; font-size: 0.7em; margin-right: 0.2em; vertical-align: top; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">引领微信内容新风尚</section><section style="width: 1.2em; color: rgb(120, 124, 129); line-height: 1.2em; font-family: inherit; font-size: 0.7em; margin-right: 0.2em; vertical-align: top; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">微信营销权威发布</section><section style="width: 1.2em; color: rgb(120, 124, 129); line-height: 1.2em; font-family: inherit; font-size: 0.7em; margin-right: 0.2em; vertical-align: top; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">做最专业的微信平台</section><section class="main" style="width: 1.2em; text-align: center; line-height: 1.2em; margin-right: 1em; vertical-align: top; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);"><section class="wxqq-bg" style="color: rgb(255, 255, 255); font-family: inherit; font-size: 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">专业</section></section><section style="width: 1.2em; line-height: 1em; font-family: inherit; font-size: 1.5em; vertical-align: top; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">关注我</section><section style="text-align: left; line-height: 1.6em; font-family: inherit; font-size: 0.8em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">微信号：师院小微</section><section style="text-align: left; color: rgb(120, 124, 129); line-height: 1.6em; font-family: inherit; font-size: 0.8em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">微信搜索“<span style='color: rgb(120, 124, 129); line-height: 20.47px; font-family: "Microsoft YaHei"; font-size: 13px; background-color: rgb(255, 255, 255);'>微信图文排版</span>,师院小微”</section><section style="text-align: left; color: rgb(120, 124, 129); line-height: 1.6em; font-family: inherit; font-size: 0.8em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">小微团队技术支持<br style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">合作信箱：<span style='color: rgb(120, 124, 129); line-height: 20.47px; font-family: "Microsoft YaHei"; font-size: 13px; background-color: rgb(255, 255, 255);'>kefu@btxiaowei.net</span></section></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset style="margin: 20px 0px 0px 10px; padding: 0px; border: 0px currentColor; color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><section style="line-height: 1.4em; margin-left: -0.5em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><section class="wxqq-bg" style="padding: 0.2em 0.5em; border-radius: 0.3em; text-align: center; color: white; font-size: 0.8em; display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236); -webkit-transform: rotateZ(-10deg); -webkit-transform-origin: 0% 100%;">我的观点</section></section><section class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="border: 1px solid rgb(0, 187, 236); font-size: 1em; margin-top: -1.5em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><section style="padding: 1.4em 1em 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span style="text-align: inherit; color: rgb(253, 176, 0); line-height: 1.2; font-family: inherit; font-size: 1em; text-decoration: inherit; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></span><span style="text-align: inherit; color: rgb(51, 51, 51); line-height: 1.2; font-family: inherit; font-size: 1em; text-decoration: inherit; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">可在这输入内容， 关注我们 -- 小微在线编辑助手</span></section></section></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 15px; border-radius: 10px; border: 3px dashed rgb(0, 187, 236);"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 15px; border: 1px solid rgb(0, 187, 236);"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 15px; border-radius: 5px; border: 1px solid rgb(0, 187, 236);"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderLeftColor" style="margin: 0px; padding: 15px 25px; top: 0px; line-height: 24px; font-size: 14px; vertical-align: baseline; border-left-color: rgb(0, 187, 236); border-left-width: 10px; border-left-style: solid; display: block; -ms-word-wrap: break-word; max-width: 100%; background-color: rgb(239, 239, 239);"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style='background-position: 10px 11px; margin: 0px; padding: 20px 15px 15px 48px; border-radius: 5px; border: 1px solid rgb(0, 187, 236); line-height: 1.5; background-image: url("./images/mmbizgif.gif"); background-repeat: no-repeat;'><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style='background-position: 10px 11px; margin: 0px; padding: 20px 15px 15px 48px; border-radius: 5px; border: 1px solid rgb(0, 187, 236); line-height: 1.5; background-image: url("https://mmbiz.qlogo.cn/mmbiz/6xsuhALdNEr8ZmVegySCLnxIFNbiapIkjfbmlrwbMmEekDcogkX6hWoIdzSgEGa6MPOAApvhC6b2qYXibCYhzsHQ/0"); background-repeat: no-repeat;'><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="padding: 15px; border: 1px dotted rgb(0, 187, 236); line-height: 2em; font-family: 宋体; -ms-word-wrap: break-word !important; min-height: 1.5em; max-width: 100%; border-bottom-right-radius: 15px; border-bottom-left-radius: 10px;"><legend style="margin: 0px; padding: 0px; text-align: center; color: rgb(0, 0, 0); font-family: 微软雅黑; -ms-word-wrap: break-word !important; max-width: 100%;"><p class="wxqq-bg" style="margin: 0px; padding: 0px 20px 4px; color: rgb(255, 255, 255); line-height: 2em; font-size: 14px; white-space: pre-wrap; -ms-word-break: normal; -ms-word-wrap: normal; min-height: 1.5em; max-width: 100%; border-bottom-right-radius: 100%; border-bottom-left-radius: 100%; background-color: rgb(0, 187, 236);"><strong class="ue_t" style="max-width: 100%;">请输入标题</strong></p></legend><p style="margin: 0px; padding: 0px; line-height: 2em; -ms-word-break: normal; -ms-word-wrap: normal; min-height: 1.5em; max-width: 100%;"><span class="ue_t" style="line-height: 2em; -ms-word-wrap: break-word !important; max-width: 100%;">可在这输入内容， 关注我们 -- 小微在线编辑助手</span></p></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 5px; border: 1px solid rgb(0, 187, 236);"><legend style="margin: 0px 10px;"><span class="wxqq-bg" style="padding: 5px 10px; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; background-color: rgb(0, 187, 236);">这输入标题</span></legend><blockquote style="margin: 0px; padding: 10px;"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 5px; border: 1px solid rgb(0, 187, 236);"><legend style="margin: 0px 10px;"><span class="wxqq-bg" style="padding: 5px 10px; border-radius: 5px; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; background-color: rgb(0, 187, 236);">这输入标题</span></legend><blockquote style="margin: 0px; padding: 10px;"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 5px; border-radius: 5px; border: 1px solid rgb(0, 187, 236); background-color: rgb(239, 239, 239);"><legend style="margin: 0px 10px;"><span class="wxqq-bg" style="padding: 5px 10px; border-radius: 5px; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; background-color: rgb(0, 187, 236);">这输入标题</span></legend><blockquote style="margin: 0px; padding: 10px;"><p class="ue_t">我的标题内容区是圆角</p></blockquote></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="font: 16px/24px 宋体; margin: 0px; padding: 15px; border: 1px solid rgb(0, 187, 236); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; orphans: 2; widows: 2; font-stretch: normal; box-shadow: 5px 5px 2px rgb(165,165,165); background-color: rgb(239, 239, 239); -webkit-text-stroke-width: 0px;"><legend style="margin: 0px; padding: 0px; text-align: center; font-size: medium; -ms-word-wrap: break-word !important; max-width: 100%;"><span style="font-family: 微软雅黑; font-size: 14px; -ms-word-wrap: break-word !important; max-width: 100%;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%;"><span class="wxqq-bg" style="padding: 4px 10px; border-radius: 2em 1em 4em / 0.5em 3em; color: rgb(255, 255, 255); -ms-word-wrap: break-word !important; max-width: 100%; box-shadow: 4px 4px 2px rgb(165,165,165); background-color: rgb(0, 187, 236);">这输入标题</span></strong></span></legend><p style="font: 14px/24px 微软雅黑, Microsoft YaHei; color: rgb(89, 89, 89); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; orphans: 2; widows: 2; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="font: 16px/24px 宋体; margin: 0px; padding: 15px; border: 1px solid rgb(0, 187, 236); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; orphans: 2; widows: 2; font-stretch: normal; background-color: rgb(239, 239, 239); -webkit-text-stroke-width: 0px;"><legend style="margin: 0px; padding: 0px; text-align: center; font-size: medium; -ms-word-wrap: break-word !important; max-width: 100%;"><span style="font-family: 微软雅黑; font-size: 14px; -ms-word-wrap: break-word !important; max-width: 100%;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%;"><span class="wxqq-bg" style="padding: 4px 10px; border-radius: 2em 1em 4em / 0.5em 3em; color: rgb(255, 255, 255); -ms-word-wrap: break-word !important; max-width: 100%; background-color: rgb(0, 187, 236);">这输入标题</span></strong></span></legend><p style="font: 14px/24px 微软雅黑, Microsoft YaHei; color: rgb(89, 89, 89); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; orphans: 2; widows: 2; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-bg" style="font:/21px 微软雅黑; margin: 0px; padding: 10px 20px; border-radius: 0.5em 3em 0.5em 0em / 4em 0.5em 1em 3em; border: 2px dotted rgb(225, 225, 225); text-align: justify; color: rgb(255, 255, 255); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; max-width: 100%; orphans: 2; widows: 2; font-stretch: normal; box-shadow: 5px 5px 2px rgb(225,225,225); background-color: rgb(0, 187, 236); -webkit-text-stroke-width: 0px;"><p>可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-bg" style="border-width: 2px; font: 16px/24px 微软雅黑; margin: 0px; padding: 10px 15px; border-radius: 5px; color: rgb(255, 255, 255); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; font-stretch: normal; background-color: rgb(0, 187, 236); -webkit-text-stroke-width: 0px;"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-bg" style="margin: 0px; padding: 5px 15px; border-radius: 5px 5px 0px 0px; border: 0px currentColor; text-align: left; color: rgb(255, 255, 255); line-height: 25px; font-weight: bold; max-width: 100%; background-color: rgb(0, 187, 236);"><span class="ue_t">这输入标题</span></blockquote><blockquote class="l" style="margin: 0px; padding: 10px 15px 20px; border-radius: 0px 0px 5px 5px; border: 0px currentColor; line-height: 25px; max-width: 100%; background-color: rgb(239, 239, 239);"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-bg" style="margin: 0px; padding: 5px 15px; border-radius: 5px 5px 0px 0px; border: 0px currentColor; text-align: left; color: rgb(255, 255, 255); line-height: 25px; font-weight: bold; max-width: 100%; background-color: rgb(0, 187, 236);"><span class="ue_t">这输入标题</span></blockquote><blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 10px 15px 20px; border-radius: 0px 0px 5px 5px; border: 1px solid rgb(0, 187, 236); line-height: 25px; max-width: 100%;"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-bg" style="margin: 0px; padding: 5px 15px; border-radius: 5px 5px 0px 0px; border: 0px currentColor; text-align: left; color: rgb(255, 255, 255); line-height: 25px; font-weight: bold; display: inline-block; max-width: 100%; background-color: rgb(0, 187, 236);"><span class="ue_t">这输入标题</span></blockquote><blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 10px 15px; border: 1px solid rgb(0, 187, 236); line-height: 25px; max-width: 100%;"><p class="ue_t">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section><section class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; border: 1px solid rgb(0, 187, 236); text-align: center;"><section class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 1em auto; border-radius: 6em; border: 0.1em solid rgb(0, 187, 236); width: 12em; height: 12em;"><section class="wxqq-bg" style="margin: 0.4em auto; border-radius: 5.5em; width: 11em; height: 11em; text-align: center; display: table; max-height: 11em; background-color: rgb(0, 187, 236);"><section style="margin: 1em; padding: 1em; color: white; line-height: 1.2em; font-size: 1.5em; vertical-align: middle; display: table-cell; max-height: 11em;">请输入标题</section></section></section><section class="wxqq-bg" style="margin: 1em 1em 2em; padding: 0.5em 1em; border-radius: 1em; color: white; line-height: 1.5em; font-size: 1em; display: inline-block; white-space: nowrap; max-width: 100%; background-color: rgb(0, 187, 236);">副标题</section></section><section class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(0, 187, 236) rgb(0, 187, 236); margin: 0px; padding: 1em; text-align: center; color: rgb(0, 0, 0); line-height: 1.4em; font-size: 1em;"><p>请输入内容请输入内容<br>请输入内容请输入内容</p></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset style="border: 1px solid rgb(226, 226, 226); text-align: inherit; color: inherit; line-height: 1.6; font-family: inherit; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; box-shadow: 0px 16px 1px -10px rgb(226,226,226); background-color: transparent;"><section class="wxqq-bg" style="border-color: rgb(249, 110, 87); padding: 20px; text-align: center; color: rgb(255, 255, 255); line-height: 1.4; font-family: inherit; font-size: 1.4em; font-style: normal; font-weight: bold; text-decoration: inherit; box-shadow: 0px 3px 3px rgb(221,221,221); background-color: rgb(0, 187, 236);">请输入活动名称</section><section class="wxqq-borderTopColor wxqq-borderBottomColor" style="height: 2em; text-align: inherit; color: rgb(255, 255, 255); line-height: 1; font-family: inherit; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; margin-top: 10px; border-top-color: rgb(0, 187, 236); border-right-color: transparent !important; border-bottom-color: rgb(0, 187, 236); border-left-color: rgb(249, 110, 87); border-top-width: 1.1em; border-right-width: 1em !important; border-bottom-width: 1.1em; border-top-style: solid; border-right-style: solid !important; border-bottom-style: solid; display: inline-block; max-width: 100%; box-sizing: border-box; background-color: transparent;"><section style="padding: 0.5em 1em; height: 2em; color: rgb(255, 255, 255); font-family: inherit; font-style: normal; margin-top: -1em; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 100%;">活动时间</section></section><section style="padding: 5px; color: inherit; font-family: inherit; font-style: normal;">2014-10-11</section><section class="wxqq-borderTopColor wxqq-borderBottomColor" style="height: 2em; text-align: inherit; color: rgb(255, 255, 255); line-height: 1; font-family: inherit; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; margin-top: 10px; border-top-color: rgb(0, 187, 236); border-right-color: transparent !important; border-bottom-color: rgb(0, 187, 236); border-left-color: rgb(249, 110, 87); border-top-width: 1.1em; border-right-width: 1em !important; border-bottom-width: 1.1em; border-top-style: solid; border-right-style: solid !important; border-bottom-style: solid; display: inline-block; max-width: 100%; box-sizing: border-box; background-color: transparent;"><section style="padding: 0.5em 1em; height: 2em; color: rgb(255, 255, 255); font-family: inherit; font-style: normal; margin-top: -1em; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 100%;">活动地点</section></section><section style="padding: 5px; color: inherit; font-family: inherit; font-style: normal;">学子广场</section><section class="wxqq-borderTopColor wxqq-borderBottomColor" style="height: 2em; text-align: inherit; color: rgb(255, 255, 255); line-height: 1; font-family: inherit; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; margin-top: 24px; border-top-color: rgb(0, 187, 236); border-right-color: transparent !important; border-bottom-color: rgb(0, 187, 236); border-left-color: rgb(249, 110, 87); border-top-width: 1.1em; border-right-width: 1em !important; border-bottom-width: 1.1em; border-top-style: solid; border-right-style: solid !important; border-bottom-style: solid; display: inline-block; max-width: 100%; box-sizing: border-box; background-color: transparent;"><section style="padding: 0.5em 1em; height: 2em; color: rgb(255, 255, 255); font-family: inherit; font-style: normal; margin-top: -1em; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 100%;">活动介绍</section></section><section style="padding: 16px; color: inherit; font-family: inherit; font-style: normal;">请输入活动内容<br>请输入活动内容<br>请输入活动内容<br>......</section></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 10px 15px; border: 6px solid rgb(0, 187, 236); -ms-word-wrap: break-word !important; max-width: 100%; border-top-left-radius: 50px; border-bottom-right-radius: 50px; box-shadow: 5px 5px 2px rgb(165,165,165);"><p style="padding: 0px; line-height: 24px; margin-top: 0px; margin-bottom: 0px; -ms-word-wrap: break-word !important; min-height: 1.5em; max-width: 100%;">可在这输入内容， 关注我们 -- 小微在线编辑助手</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 15px; padding: 20px; border: 1px dotted rgb(0, 187, 236); text-align: justify; color: rgb(73, 68, 41); line-height: 2em; font-family: 微软雅黑; font-size: 14px; white-space: pre-wrap; -ms-word-wrap: normal; min-height: 1.5em; max-width: 100%; box-sizing: border-box !important; border-bottom-right-radius: 15px; border-bottom-left-radius: 10px; background-color: rgb(255, 255, 255);"><span class="wxqq-color" style="color: rgb(0, 187, 236); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">请输入内容</strong></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset class="comment_quote" style="margin: 5px 0px; padding: 5px; border: 1px solid rgb(204, 204, 204); color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: 5px 5px 2px rgb(165,165,165); background-color: rgb(248, 247, 245);"><legend style="margin: 0px; padding: 0px; line-height: 1.8em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><strong style="text-align: center; color: rgb(89, 89, 89); line-height: 42.66px; font-family: 微软雅黑; font-size: 18px; white-space: pre-wrap; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span class="wxqq-color" style="color: rgb(0, 187, 236); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; text-shadow: 5px 3px 1px rgb(201,201,201);">精彩内容</span></strong></legend><p style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important;">请输入内容<br>请输入内容<br>请输入内容<br></p></fieldset>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote style="margin: 0.2em; padding: 10px; border: 3px solid rgb(201, 201, 201); color: rgb(62, 62, 62); line-height: 25.6px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: 0px 0px 10px rgb(170,170,170); background-color: rgb(255, 255, 255); border-image-source: none; -webkit-box-shadow: rgb(170, 170, 170) 0px 0px 10px;"><p style="margin-top: 0px; margin-bottom: 0px; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important;"><span style="line-height: 25.6px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">可在这输入内容</span></p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <fieldset style="border: 0px currentColor;"><section style="margin: 0px; padding: 0.3em; border: 1px solid rgb(226, 226, 226); line-height: 1em; font-size: 1em; box-shadow: 0px 1em 0.1em -0.8em #e2e2e2; background-color: rgb(255, 255, 255);"><section class="wxqq-bg" style="padding: 0.5em; background-color: rgb(0, 187, 236);"><section style="margin-top: 0px; margin-left: 8px;"><img style="width: 50px; margin-top: 12px; margin-right: 10px; float: right;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0GPLZlicQq2RYNicbDmd1xQT0bUciblLZu0VbAWwe3wmcYLIGv4Ek3fdon3hFCsibLLic34WU7jQz3KgpQ/640"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<section style="text-align: inherit; color: rgb(255, 255, 255); line-height: 1.2em; font-family: inherit; font-size: 1.2em; text-decoration: inherit;">Yeah！</section><section style="text-align: inherit; color: rgb(255, 255, 255); line-height: 1.2em; font-family: inherit; font-size: 1.2em; text-decoration: inherit;">关注小微在线编辑助手</section><section style="text-align: inherit; color: rgba(255, 255, 255, 0.85098); line-height: 1.6em; font-family: inherit; font-size: 0.7em; text-decoration: inherit;">请输入内容</section></section><section style="text-align: right; clear: both; margin-top: 1em; margin-right: 0px;"><section style="text-align: inherit; color: rgba(255, 255, 255, 0.85098); line-height: 1.6em; font-family: inherit; font-size: 0.7em; text-decoration: inherit;">请输入内容</section><section style="text-align: inherit; color: rgba(255, 255, 255, 0.85098); line-height: 1.6em; font-family: inherit; font-size: 0.7em; text-decoration: inherit;">请输入内容</section></section></section></section></fieldset><p><br></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="text-align: left;"><img style="width: 40px; vertical-align: top;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iaLEvswCQUUK0k4rPOicLo8SMm0pJOkgsVHg5qDgb0paoeAmW1YTgQRcQ/640"><img style="margin-top: 1.8em; vertical-align: top;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iaIlnFWUEOLQMyRuiaZqhFtx2ria5fDpE1ZJiaPttmsZzlWRkwiamEdRia0Rg/640"><section style="padding: 8px; border-radius: 1em; width: 40%; margin-top: 0.7em; margin-left: -0.4em; display: inline-block; background-color: rgb(255, 228, 200);"><p>请输入对话</p></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="text-align: right;"><section style="padding: 8px; border-radius: 1em; width: 40%; text-align: left; margin-top: 0.7em; margin-right: -0.4em; display: inline-block; background-color: rgb(188, 227, 249);"><p>请输入对话</p></section><img style="margin-top: 1.8em; vertical-align: top;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iavuZiarEgOVeibbOgJXZEyFaPMraQnzLQsKpVJFTezDnO8zwZly0NbunA/640"><img style="width: 40px; vertical-align: top;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iaia9Qbm8Bwp9Eribfk1rscovFOkJSD0NOD8M36LkR0dQBrJeBgFTPEhww/640"></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="text-align: left;"><img style="width: 40px; vertical-align: top;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EXNGDDXjhn7BQlLVZfE4a72NDhuKJZheaZoX3JcYZ8wicrltbzurnAx8Urww68iaiaaC541u0miaUGqg/640"><img style="margin-top: 29px; vertical-align: top; background-color: rgb(250, 200, 255);" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0HFAP2f2XKYibcoIIfH3FE09eaaY5ibibeWTzWLUe1lytercv3oQYnOebKXHMkpXhYBYPvKhse6ibeY4A/640"><section style="padding: 8px; border-radius: 1em; width: 40%; margin-top: 0.7em; margin-left: -0.4em; display: inline-block; background-color: rgb(250, 200, 255);"><p>请输入对话</p></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="text-align: right;"><section style="padding: 8px; border-radius: 1em; width: 40%; text-align: left; margin-top: 0.7em; margin-right: -0.4em; display: inline-block; background-color: rgb(188, 227, 249);"><p>请输入对话</p></section><img style="margin-top: 1.8em; vertical-align: top;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iavuZiarEgOVeibbOgJXZEyFaPMraQnzLQsKpVJFTezDnO8zwZly0NbunA/640"><img style="width: 40px; vertical-align: top;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0EXNGDDXjhn7BQlLVZfE4a7eyibPmHcP5XBsBl0KZPM0LQibDWticwHV1SSxz8Ha4rjtk93ZD4sTPSsg/640"></section>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                                                    <div class="tab_con dn" id="tab4">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/mXxlqaPRlDzTXa45W9TJhxYHa6M3RZZCLxVUAdSTHz3JTaL4iaskuZD5Od3DO42S8BSgcJMdPVvX0qeIjkuoPqQ/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/OZ5JkiabmFrqUicIEdmQZcbnvk3JAebibjoyuDfm7ZncGaBrQx7QPfXfk7xUeFYY8Ebdukz6Lb3t6FfLKOtfHNveA/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/mnoDuttLdiaGOkNHmGLdVKbCDbyJMN8fU7JxQ7rpsKnPIzLGhIk59UnDLrIic9JjicxXTY1Hib2ibNWlu7YDkOvAcRQ/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/UYumC8SBmaa6QZE1nSJe2Kf6o5TBe46oBcDDYLsH3xXOiao7pfxZJoOBeVicEbl46EicwiaDnzeSrPXfNo7ePV9MWg/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/icsOibyiaScKichtH5FB3ts3skaghFOyhPRZP6v4V3STNKcwgTuh838PbQg5Lgw0QRud69vbV12nNGGVTLrOH7kbwg/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/icsOibyiaScKichtH5FB3ts3skaghFOyhPRZsbibDwhWWJUjEC9RFS7jeC0RXymONdGm9uO04MzqEyRgYE4Kto5Mcag/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="https://mmbiz.qlogo.cn/mmbiz/6xsuhALdNEr0ibLDATPbiaQoI0OyJzZP813MfewdMGP0CRRUqTgCGJO4tKibZJLcrVESQxnmTNDFSzuTCnVjV6iaxw/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="https://mmbiz.qlogo.cn/mmbiz/6xsuhALdNEr0ibLDATPbiaQoI0OyJzZP81KAjkO1amv78GtEQkLiag8ibQ7NibgTdnj0tUpmhMo2DsYvZkLAQzH8edw/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%; height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/n9BCHWJuRJdzyh5Fp34xlCVWbiaUmtrN1yiceibLDdtNOVKXATXs54cHQU8qmuiaYKmddeRdECbALhP8UbNDBvhL8A/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <hr class="wxqq-borderTopColor" style="border-width: 5px 0px 0px; margin: 0px; border-top-color: rgb(0, 187, 236); border-top-style: solid;">                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <hr class="wxqq-borderTopColor" style="border-width: 5px 0px 0px; margin: 0px; border-top-color: rgb(0, 187, 236); border-top-style: dashed;">                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <hr class="wxqq-borderTopColor" style="border-width: 5px 0px 0px; margin: 0px; border-top-color: rgb(0, 187, 236); border-top-style: dotted;">                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <hr class="wxqq-borderTopColor" style="border-width: 5px 0px 0px; margin: 0px; border-top-color: rgb(0, 187, 236); border-top-style: double;">                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                                                            </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="https://mmbiz.qlogo.cn/mmbiz/6xsuhALdNEr0ibLDATPbiaQoI0OyJzZP81DgtJV8WDPvibic2aDwT0NLSCNhzUgvoKu5iaweIk0Izoia4hgEvvfBObfA/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/vxmBc5w1riahEKC8yZlQ3EmFqKzmwTEBOObGgjNc0TfCgWt9Xu4JV2ndrjz23xibMkYGBbzudiabe2WfP8tibG5OKA/0"></p>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                                                    <div class="tab_con dn" id="tab5">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <p class="wxqq-bg" style="padding: 5px 20px; border-radius: 5px; text-align: center; color: rgb(255, 255, 255); line-height: 25px; font-family: 微软雅黑; font-size: medium; margin-top: auto; margin-bottom: auto; white-space: normal; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);"><span style="font-size: 12px;"><span style='border-color: rgb(103, 61, 189); font-family: 微软雅黑, "Microsoft YaHei";'>点击“阅读全文”，了解详情</span></span></p><p style="margin: auto 55px; padding: 0px; border: 0px solid rgb(255, 0, 0); width: auto; color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; font-size: medium; white-space: normal; -ms-word-wrap: normal; min-height: 1em; max-width: 100%; box-sizing: border-box !important;"><span class="wxqq-borderTopColor" style="border-width: 20px; border-style: solid dashed dashed; border-color: rgb(0, 187, 236) transparent transparent; width: 50px; height: 50px; bottom: -60px; font-size: 0px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></span></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section><section style="height: 8em; overflow: hidden; white-space: nowrap;"><img style="max-height: 100%; max-width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/MVPvEL7Qg0ETPe4wicm4dXwcYRViatKk0CUSIMS1xkfuerLgqInf5yCgXAndN0y2icZj71ibVg28DzejYfbfibslmFg/640"></section><section style="margin: -7.2em 0.5em 5.5em; padding: 0.5em; height: 2em; line-height: 1.6em; font-size: 1em;"><span style="color: inherit; overflow: hidden; font-family: inherit; font-size: 0.9em; font-style: normal;">点击下方</span><span style="color: rgb(64, 84, 115); overflow: hidden; font-family: inherit; font-size: 0.9em; font-style: normal;">“阅读原文”</span><span style="color: inherit; overflow: hidden; font-family: inherit; font-size: 0.9em; font-style: normal;">查看更多</span></section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p style="padding: 0px; border-radius: 5px; text-align: center; color: rgb(255, 255, 255); line-height: 36px; font-family: 微软雅黑; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-break: normal; -ms-word-wrap: break-word; min-height: 1.5em; text-shadow: 0px 1px 1px rgb(69,117,58); background-color: rgb(0, 0, 0);">点击左下角查看更多</p><p><img src="http://mmbiz.qpic.cn/mmbiz/PKicKQId1ThSXib1hRJL1peIEpCqxPtSibFl0qrf7GjU3B5CrORqEWtIOiaGEBC5fqWYy92zytvytQumxmb8lNQiaxQ/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section><section class="wxqq-bg" style="margin: 0px; height: 0.1em; background-color: rgb(0, 187, 236);"></section><section class="wxqq-bg" style="margin: 0.3em 0px; height: 0.3em; background-color: rgb(0, 187, 236);"></section><section class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 0px; padding: 0.5em; border: 1px solid rgb(0, 187, 236); line-height: 1.6em; font-size: 1em; box-shadow: 0em 1em 0.1em -0.8em #e2e2e2; background-color: white;"><span style="color: inherit; font-family: inherit; font-size: 1em; font-style: normal;">点击下方</span><span style="color: rgb(64, 84, 115); font-family: inherit; font-size: 1em; font-style: normal;">“阅读原文”</span><span style="color: inherit; font-family: inherit; font-size: 1em; font-style: normal;">查看更多</span></section><section class="wxqq-color" style="color: rgb(0, 187, 236); font-size: 2em;">↓↓↓</section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p class="wxqq-bg" style="padding: 0px; border-radius: 5px; text-align: center; color: rgb(255, 255, 255); line-height: 36px; font-family: 微软雅黑; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-break: normal; -ms-word-wrap: break-word; min-height: 1.5em; background-color: rgb(0, 187, 236);">点击左下角查看更多</p><p class="wxqq-borderTopColor" style="margin: -5px 0px 0px 50px; border-top-color: rgb(0, 187, 236); border-right-color: transparent !important; border-left-color: transparent !important; border-top-width: 1.5em !important; border-right-width: 1em; border-left-width: 1em; border-top-style: solid !important; border-right-style: solid; border-left-style: solid; display: inline-block;"><br></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="height: auto !important;" src="https://mmbiz.qlogo.cn/mmbiz/6xsuhALdNEr0ibLDATPbiaQoI0OyJzZP81UXUmbPYz4qyVKL7WpUic11M6eHazOaD9jb3icQTqsL1CJIe9IDS0jAZA/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/uggPXkDSooqibfgUEs1GubU9NRuK72H1eeiaK1PmWw2odXicUgpRkpPW6sOEiav4P9r1NXLBibctLkx0IFb42aczwYg/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/YsoUOd0FhHBoNgwk08PRaxiczrADjnOvMmOV9ejQicgw2okIFdw3WXE7foWiaIIZ85eiaBMuUjiadU1G9dklTpnawicg/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="height: auto !important;" src="https://mmbiz.qlogo.cn/mmbiz/6xsuhALdNEr0ibLDATPbiaQoI0OyJzZP81lDG16baWTZcqDITZBZ3BlyicuKb2GbyvibvkSqU0ER9EtKaEtL72YhEw/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="padding: 0.7em 0px; color: rgb(63, 71, 78); line-height: 1.4em; font-family: 微软雅黑; font-size: 1em; font-style: italic; border-top-color: rgb(63, 71, 78); border-bottom-color: rgb(63, 71, 78); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span style="font-size: 12px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><em style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">点击“<span style="color: rgb(192, 80, 77); font-size: 16px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">阅读原文</span>”体验一次简单不过的微信编辑体验，不用太久，不用太难，<span style="color: rgb(155, 187, 89); font-size: 16px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">瞬间</span>即可！</em></strong></span></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="height: auto !important;" src="http://mmbiz.qpic.cn/mmbiz/kdRN5kZxWw4mXReibzBibhQygFBfc8Yse73RNYZEUAERSe0jTwJmbPxEt77rA97Nico4277rXv6Dp2FrYVzez8iaDA/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="http://weituibao.qiniudn.com/ueditor/php/upload/image/20140905/1409882464115115.gif"></p>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                                                    <div class="tab_con dn" id="tab6">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/I1Myl27UdXjmg49ag4Qs7SQiaW3L2KFbyb3VuWibRzytuNZaNEwf0lQQA5XQz2yqNgr13w2F7cUSakjTs7fA2frw/0"></p>                                    </div>
+                                </li><li>
+                                <li><div class="itembox"><fieldset data-id="7313" style="border:0 none;" class="laogui">
+    <section style="background-color: #fff;border: 1px solid #dbdbdb;margin: 0 0 2px 4px;">
+        <img alt="" border="0" src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPhmHR6CZlTyWUy3W8Hc3bmQ8k5NEDj5mMNQmole1rUJMErsKrETtNuITkxcE34XGPCcNGUia4gRnkg/0" style="width:100%" title="" vspace="0"/>
+        <h2 class="135brush" data-brushtype="text" style="margin:10px 0;font-size:20px;padding: 3px 10px 2px;">
+            图片标题
+        </h2>
+        <section class="135brush" style="padding: 3px 10px 15px;">
+            <p>
+                图片内容描述，支持多段落。
+            </p>
+        </section>
+    </section>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="131" style="border:0 none;" class="laogui">
+    <section style="margin: 0.3em 0px; padding-bottom: 1.5em; font-size: 14px; font-weight: bold; text-align: center; text-decoration: inherit; box-sizing: border-box;">
+        <img src="http://img.wx135.com/files/users/0/925/201504/e6wq0I8Y_nBQ7.jpg" style="border-radius:50%; color:inherit; height:112px !important; margin-right:10px; vertical-align:middle; width:112px"/>
+        <section style="border-left-width: 1px; border-left-style: solid; border-color: rgb(211,172,156); padding-left: 1em; text-align: left; display: inline-block; height: 6em; vertical-align: top;color: rgb(211,172,156); margin-top: 1em;">
+            <h2 class="135brush" data-brushtype="text" style="width: 100%; overflow: hidden; height: 50%; font-size: 1.5em; margin-top: -0.15em; border-color: rgb(211,172,156); color: inherit;margin-bottom:0.5em;">
+                计划
+            </h2>
+            <section class="135brush" data-style="font-size: 16px;" style="font-size: 16px; border-color: rgb(211,172,156); color: inherit;">
+                <p>
+                    =Planning=
+                </p>
+            </section>
+        </section>
+    </section>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="2392" style="border:0 none;" class="laogui">
+    <fieldset style="border: none; margin: 0.8em 0px 0.3em; box-sizing: border-box; padding: 0px;">
+        <section style="line-height: 0; box-sizing: border-box;">
+            <img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPhmHR6CZlTyWUy3W8Hc3bmQz9Lj4bWrMrcs9YdFDKOQDDYzSJo1yUmcHdtjVVicehqbvANPLhjAUtw/0" style="border:0px; box-sizing:border-box; display:inline-block; height:auto !important; width:100%"/>
+        </section>
+        <section style="width: 30%; display: inline-block; float: left; text-align: right; margin: 15px 0px 0px; padding: 0px; box-sizing: border-box;">
+            <section style="float: right; text-align: center; margin-top: -15px; box-sizing: border-box;">
+                <section style="width: 1px; height: 1.2em; margin-left: 50%; background-color: rgb(102, 102, 102); box-sizing: border-box;"></section>
+                <section style="width: 2em; height: 2em; border: 1px solid rgb(102, 102, 102); border-radius: 50%; line-height: 2em; font-size: 1em;font-weight: inherit; text-decoration: inherit; box-sizing: border-box;">
+                    <section class="135brush" data-brushtype="text" style="box-sizing: border-box;">
+                        简
+                    </section>
+                </section>
+                <section style="width: 2em; height: 2em; border: 1px solid rgb(102, 102, 102); margin-top: 2px; border-radius: 50%; line-height: 2em; font-size: 1em;  font-weight: inherit; text-decoration: inherit; box-sizing: border-box;">
+                    <section class="135brush" data-brushtype="text" style="box-sizing: border-box;">
+                        单
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section style="width: 65%; float: left; margin-top: 20px; line-height: 1.5em; margin-left: 5%; padding: 0px; font-size: 1em;  font-weight: inherit; text-decoration: inherit; color: rgb(39, 44, 51); box-sizing: border-box;">
+            <section style="box-sizing: border-box;">
+                <section class="135brush" data-brushtype="text" style="box-sizing:border-box; font-size:175%;margin:5px 0px">
+                    Cafe
+                </section>
+                <section class="135brush" data-brushtype="text" style="box-sizing: border-box;font-size:16px">
+                    伟提尼亚记忆
+                </section>
+            </section>
+        </section>
+    </fieldset>
+</fieldset></div></li>
+                                <li><div class="itembox">
+<fieldset data-id="7237" style="border:0 none;" class="laogui">
+    <section style="margin: 3px;background-color: #fff;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);">
+        <img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPhmHR6CZlTyWUy3W8Hc3bmQpOLMRHGUzMqAj9GJia84iaoRwTX00icAU0iaoggqYJic507FKQTn4yDXKKg/0" style="width:100%"/><section class="135brush" data-type="main">
+            <p style="line-height: 1.35em; margin-top: 10px; overflow: hidden; padding: 0px 16px; word-wrap: break-word;">
+                <span style="line-height:1.35em">图文样式排版。</span></p>
+            <p style="line-height: 1.35em; margin-top: 10px; overflow: hidden; padding: 0px 16px; word-wrap: break-word;">
+                底下为作者信息</p>
+        </section>
+        <section style="background: none repeat scroll 0 0 #fafafa;border-top: 1px solid #f2f2f2;color: #999;padding: 16px; 15px;">
+            <img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPiazjsibqzMEbFXfnLK8n31varDasdXuq4ickQRyw81IN3MseODRupKZMaqqCnEyWH3mCvfIPhQnibOWQ/0" style="float:left; height:34px; margin-right:10px; width:34px"/><section class="135brush" data-style="clear: none;line-height:17px;padding:0 0;font-size:12px;">
+                <p style="clear: none;font-size:12px;line-height:17px;padding:0 0;margin:0 0;">
+                    <strong>简单易用的才是最好的</strong></p>
+                <p style="clear: none;font-size:12px;line-height:17px;padding:0 0;margin:0 0;">
+                    小微团队</p>
+            </section>
+        </section>
+    </section>
+</fieldset></div></li>
+                                <li><div class="itembox"></div></li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/axTPQVMEapWQibpwhobE3Al42fFhMa4f44libMxp2ibSrIfD70dtL4IfSrI6FF4x5wc8Cq1icT88myiasWRwMhxoTbw/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/qOR4sJ6lUE0vjRlHAgUXzxfJVg9Svw3QzJjiaFvUuuXR8oeDDCHWBdwGcdxyLssiczNK9QL4W0ogbBdVa5x2rZdA/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/OxDwkXUaAo3aVwTzAAuupbRpLLwCmZ7V9okY6FVQgYqbuP7zAsNIkq7ia0mNVF8BK0Mrtiaf74jaH15GoxgzCe6Q/0"></p>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                                                    <div class="tab_con dn" id="tab7">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-bg" style="margin: 0px; padding: 5px 20px; border-radius: 15px 15px 2px 2px; border: 2px rgb(66, 249, 255); width: 180px; text-align: center; color: rgb(255, 255, 255); line-height: 24px; font-family: 微软雅黑; font-size: 16px; font-weight: 700; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: 0px -1px 6px #999; text-shadow: 0px -1px 2px #0a0a0a; background-color: rgb(0, 187, 236);">关注我</blockquote><blockquote style="margin: 0px; padding: 10px; border-radius: 0px 0px 10px 10px; border: 1px solid rgb(204, 204, 204); color: rgb(62, 62, 62); line-height: 24px; font-family: 微软雅黑; font-size: 12px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; box-shadow: 0px -1px 6px rgb(204,204,204); background-color: rgb(228, 228, 228);"><span style="color: rgb(0, 176, 80); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">微信号：</span><span class="wxqq-bg" style="padding: 2px 5px; color: rgb(255, 255, 255); font-weight: 700; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);">微信号 </span><span style="color: rgb(0, 187, 236); padding-left: 5px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">(←长按复制) </span><p style="padding: 10px 0px 0px; color: rgb(102, 102, 102); line-height: 2em; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-break: normal; -ms-word-wrap: normal; min-height: 1.5em; max-width: 100%; box-sizing: border-box !important;">全力打造关注我微信营销第一品牌</p></blockquote>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="padding: 0px; color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><section style="line-height: 1.4em; margin-left: 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span class="wxqq-bg" style="padding: 0.2em 0.5em; border-radius: 0.3em; text-align: center; color: rgb(255, 255, 255); font-family: inherit; font-size: 0.8em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);">这输入标题</span>&nbsp;<span style="padding: 0.2em 0.5em; border-radius: 1.2em; height: 1.2em; color: rgb(255, 255, 255); line-height: 1.2em; font-family: inherit; font-size: 0.8em; margin-left: 0.3em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(204, 204, 204);">关注我</span></section><section style="padding: 1.4em 1em 1em; border-radius: 0.3em; border: 1px solid rgb(192, 200, 209); color: rgb(51, 51, 51); font-family: inherit; font-size: 1em; margin-top: -0.7em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(239, 239, 239);">可在这输入内容，欢迎使用关注小微在线编辑助手，微信编辑首选。</section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 10px 0px; padding: 10px; border-radius: 5px !important; border: 3px dotted rgb(0, 187, 236); font-weight: normal;"><h3 style="margin: 0px; color: rgb(89, 89, 89); font-size: 14px;"><span class="wxqq-bg" style="padding: 2px 5px; border-radius: 5px !important; color: rgb(255, 255, 255); font-size: 14px; margin-right: 15px; background-color: rgb(0, 187, 236);">关注我</span>微信号：<span class="wxqq-bg" style="padding: 2px 5px; border-radius: 5px !important; color: rgb(255, 255, 255); font-size: 14px; background-color: rgb(0, 187, 236);">免费中国</span></h3><p style="margin: 10px 0px 5px;">微信公众号简介，欢迎使用关注小微在线编辑助手！</p></blockquote>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                        <div class="tab_con dn" id="tab9">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <section class="135editor">
+    <fieldset style="clear: both; padding: 0px; border: 0px none; margin: 1em 0px 0.5em;">
+        <section style="border-top-width: 2px; border-top-style: solid; border-color: rgb(71, 193, 168); font-size: 1em; font-weight: inherit; text-decoration: inherit; color: rgb(255, 255, 255); box-sizing: border-box;">
+            <section class="135brush" data-brushtype="text" style="padding: 0px 0.5em; display: inline-block; font-size: 16px; color: inherit; background-color: rgb(71, 193, 168);">
+                理念
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <section class="135brush" placeholder="左右渐变格式内容" style="padding: 8px 30px; font-weight: bold; max-width: 100%; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; color: rgb(116, 185, 11); border-color: rgb(229, 243, 208); background-image: -webkit-linear-gradient(left, rgb(230, 249, 202), rgb(207, 233, 167)); background-color: rgb(255, 255, 220);">
+        <p style="text-align: center; border-color: rgb(229, 243, 208); color: inherit;">
+            营造团结，友爱，自由，包容的大家庭
+        </p>
+        <p style="text-align: center; border-color: rgb(229, 243, 208); color: inherit;">
+            尊重包容各种奇葩~
+        </p>
+        <p style="text-align: center; border-color: rgb(229, 243, 208); color: inherit;">
+            做排版最快捷的微信排版工具
+        </p>
+    </section>
+</section>
+<section class="135editor">
+    <fieldset style="clear: both; border: 0px none; margin-top: 1em; margin-bottom: 0.5em;">
+        <section style="border-top-width: 2px; border-top-style: solid; border-color: rgb(71, 193, 168); font-size: 1em; font-weight: inherit; text-decoration: inherit; color: rgb(255, 255, 255);">
+            <section class="135brush" data-brushtype="text" style="padding-right: 0.5em; padding-left: 0.5em; display: inline-block; font-size: 16px; color: inherit; background-color: rgb(71, 193, 168);">
+                产品
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <fieldset style="border: 0px; box-sizing: border-box; width: auto; clear: both; margin: 0px; padding: 0px 0.5em 0.5em 0px;"></fieldset>
+</section>
+<section class="135editor">
+    <section class="135brush" placeholder="左右渐变格式内容" style="padding: 8px 30px; font-weight: bold; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; color: rgb(116, 185, 11); border-color: rgb(229, 243, 208); background-image: -webkit-linear-gradient(left, rgb(230, 249, 202), rgb(207, 233, 167)); background-color: rgb(255, 255, 220);">
+        <p style="text-align: justify; color: inherit; border-color: rgb(229, 243, 208);">
+            是国内第一款可以同时给图片和多段落文字的排版的工具。其不断更新的系统推荐模板和多功能样式也为不懂代码的微信编辑们提供了引导帮助。
+        </p>
+    </section>
+</section>
+<section class="135editor">
+    <fieldset style="clear: both; border: 0px none; margin-top: 1em; margin-bottom: 0.5em;">
+        <section style="border-top-width: 2px; border-top-style: solid; border-color: rgb(71, 193, 168); font-size: 1em; font-weight: inherit; text-decoration: inherit; color: rgb(255, 255, 255);">
+            <section class="135brush" data-brushtype="text" style="padding-right: 0.5em; padding-left: 0.5em; display: inline-block; font-size: 16px; color: inherit; background-color: rgb(71, 193, 168);">
+                关于我们
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <section style="padding: 40px 40px; color: #737373; background: #f8f8f8;">
+        <p style="color: inherit;">
+            <img src="http://gtms01.alicdn.com/tps/i1/TB1VMruGpXXXXabXpXXM7dYGFXX-38-36.png" style="color:inherit; height:18px; width:19px"/>&nbsp;咳咳~
+        </p>
+        <section class="135brush" data-style="background-color:rgb(248, 248, 248); color:rgb(115, 115, 115); font-size:14px; line-height:21px" style="color: inherit;"></section>
+        <p style="text-align: right; color: inherit;">
+            <img src="http://gtms02.alicdn.com/tps/i2/TB1zQbsGpXXXXX1XFXXM7dYGFXX-38-36.png" style="color:inherit; height:18px; width:19px"/>
+        </p>
+        <p style="text-align: right; color: inherit;">
+            <br/>
+        </p>
+        <p style="text-align: right; color: inherit;">
+            小微团队
+        </p>
+    </section>
+</section>
+<section class="135editor">
+    <fieldset style="clear: both; border: 0px none; margin-top: 1em; margin-bottom: 0.5em;">
+        <section style="border-top-width: 2px; border-top-style: solid; border-color: rgb(71, 193, 168); font-size: 1em; font-weight: inherit; text-decoration: inherit; color: rgb(255, 255, 255);">
+            <section class="135brush" data-brushtype="text" style="padding-right: 0.5em; padding-left: 0.5em; display: inline-block; font-size: 16px; color: inherit; background-color: rgb(71, 193, 168);">
+                QQ号：308679726
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <fieldset style="margin: 0px 0px 0.5em; width: auto; clear: both; overflow: hidden; border: 0px none; padding: 0px; text-align: left;">
+        <img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPjC8FfZRfMG1sgFns0YXma6csy5jNvOgG3aWVox84o9AjFpMpHe759EjuWAUCmibmv2Tc6RbrCvKYA/0" style="color:inherit; float:left; width:100% !important"/>
+        <section style="display: inline-block; text-align: left; margin: -4em 0px 0px; opacity: 0.7; float: left; padding: 0.1em; width: 100%; height: 4em; color: rgb(255, 255, 255); border-color: rgb(33, 33, 34); background-color: rgb(33, 33, 34);">
+            <section class="135brush" data-style="text-align: center; border-color: rgb(128, 177, 53); color: inherit;font-size:16px" style="display: inline-block; width: 100%; color: inherit; margin-top: 1.2em; border-color: rgb(33, 33, 34);">
+                <p style="text-align: center; border-color: rgb(33, 33, 34); color: inherit; font-size: 16px;">
+                    <span style="border-color:rgb(33, 33, 34); color:inherit; line-height:1.6em">无所不能的大Bosss</span>
+                </p>
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <fieldset style="border: 0px; box-sizing: border-box; width: 100%; clear: both; overflow: hidden; padding: 0px;">
+        <section style="box-sizing: border-box; width: 65%; float: right; padding: 0px 0px 0px 0.1em;">
+            <img alt="" border="0" src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPjC8FfZRfMG1sgFns0YXma6ZCTAU8iax3XXic4ovRxws3jlwF8bjShCBt8wbfEkfuRPiayZic3nczwj2g/0" style="box-sizing:border-box; height:auto !important; width:100%" title="" vspace="0"/>
+        </section>
+        <section style="display: inline-block; width: 35%; box-sizing: border-box; float: right; padding: 0px 0.1em 0px 0px; text-align: right;">
+            <section style="box-sizing: border-box; margin-right: 4px; padding: 4px 6px; color: rgb(52, 54, 60); border-bottom-width: 1px; border-bottom-style: solid; border-color: black; font-size: 1.2em;  font-weight: inherit; text-align: inherit; text-decoration: inherit; background-color: transparent;">
+                <section class="135title" style="box-sizing: border-box;">
+                    茶老鬼
+                </section>
+            </section>
+            <section style="box-sizing: border-box; margin-right: 0.3em; padding: 3px 5px; color: rgb(120, 124, 129); font-size: 0.9em;  font-weight: inherit; text-align: inherit; text-decoration: inherit;">
+                <p style="box-sizing: border-box;">
+                    威严庄重
+                </p>
+                <p style="box-sizing: border-box;">
+                    答疑解惑
+                </p>
+                <p style="box-sizing: border-box;">
+                    各项全能
+                </p>
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <fieldset style="border: 0px; box-sizing: border-box; width: 100%; clear: both; overflow: hidden; padding: 0px;">
+        <section style="box-sizing: border-box; width: 65%; float: left; padding: 0px 0.1em 0px 0px;">
+            <img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPjC8FfZRfMG1sgFns0YXma6FL8iagJpyEq8uxThSSw5fbGY5e3xSicTRGc3ybp9nW3cjMlX2UmjLwLA/0" style="box-sizing:border-box; height:auto !important; visibility:visible !important; width:100% !important"/>
+        </section>
+        <section style="display: inline-block; width: 35%; box-sizing: border-box; float: left; padding: 0px 0px 0px 0.1em;">
+            <section class="135brush" data-brushtype="text" style="box-sizing: border-box; margin-right: 4px; padding: 4px 6px; border-bottom-width: 2px; border-bottom-style: solid; font-size: 1.2em; font-weight: bold;color: rgb(102,97,91); border-color: rgb(102,97,91);">
+                小编
+            </section>
+            <section class="135brush" data-styel="line-height: 2em;" style="box-sizing: border-box; margin-right: 0.3em; padding: 0.3em 0.5em; color: rgb(102,97,91); font-size: 0.9em;">
+                <p>
+                    时而粗现
+                </p>
+                <p>
+                    时而不见
+                </p>
+                <p>
+                    特技T人
+                </p>
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <fieldset style="margin: 0px 0px 0.5em; width: auto; clear: both; overflow: hidden; border: 0px none; padding: 0px; text-align: left;">
+        <img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPjC8FfZRfMG1sgFns0YXma6wY8nEqamTUqTbHFRDicicRkqyur4D79ruy5I4MLIdwiaBLrxRfavS553Q/0" style="color:inherit; float:left; width:100% !important"/>
+        <section style="display: inline-block; text-align: left; margin: -4em 0px 0px; opacity: 0.7; float: left; padding: 0.1em; width: 100%; height: 4em; color: rgb(239, 239, 239); border-color: rgb(60, 40, 34); background-color: rgb(60, 40, 34);">
+            <section class="135brush" data-style="text-align: center; border-color: rgb(128, 177, 53); color: inherit;font-size:16px" style="display: inline-block; width: 100%; color: inherit; margin-top: 1.2em; border-color: rgb(60, 40, 34);">
+                <p style="text-align: center; border-color: rgb(60, 40, 34); color: inherit; font-size: 16px;">
+                    设计师
+                </p>
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <fieldset style="clear: both; border: 0px none; margin-top: 1em; margin-bottom: 0.5em;">
+        <section style="border-top-width: 2px; border-top-style: solid; border-color: rgb(71, 193, 168); font-size: 1em; font-weight: inherit; text-decoration: inherit; color: rgb(255, 255, 255);">
+            <section class="135brush" data-brushtype="text" style="padding-right: 0.5em; padding-left: 0.5em; display: inline-block; font-size: 16px; color: inherit; background-color: rgb(71, 193, 168);">
+                招新季
+            </section>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <h2 class="135brush" data-bcless="darken" placeholder="深色边框标题" style="margin: 10px 0px; padding: 10px; font-size: 16px; line-height: 25px; text-shadow: rgb(34, 95, 135) 0px 1px 0px; color: rgb(123, 123, 111); border-radius: 4px; box-shadow: rgb(153, 153, 153) 2px 2px 4px; border-left-width: 10px; border-left-style: solid; border-color: rgb(221, 221, 217); background-color: rgb(245, 245, 244);">
+        PHP研发N名
+    </h2>
+</section>
+<section class="135editor">
+    <section class="135brush" placeholder="左右渐变格式内容" style="padding: 8px 30px; font-weight: bold; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; color: rgb(116, 185, 11); border-color: rgb(229, 243, 208); background-image: -webkit-linear-gradient(left, rgb(230, 249, 202), rgb(207, 233, 167)); background-color: rgb(255, 255, 220);">
+        <p style="text-align: center; color: inherit; border-color: rgb(229, 243, 208);">
+            薪水按能力可调节，具体面谈
+        </p>
+        <p style="text-align: center; color: inherit; border-color: rgb(229, 243, 208);">
+            经验不低于一年
+        </p>
+    </section>
+</section>
+<section class="135editor">
+    <h2 class="135brush" data-bcless="darken" placeholder="深色边框标题" style="margin-top: 10px; margin-bottom: 10px; padding: 10px; font-size: 16px; line-height: 25px; text-shadow: rgb(34, 95, 135) 0px 1px 0px; color: rgb(123, 123, 111); border-radius: 4px; box-shadow: rgb(153, 153, 153) 2px 2px 4px; border-left-width: 10px; border-left-style: solid; border-color: rgb(221, 221, 217); background-color: rgb(245, 245, 244);">
+        网页设计师N名
+    </h2>
+</section>
+<section class="135editor">
+    <section class="135brush" placeholder="左右渐变格式内容" style="padding: 8px 30px; font-weight: bold; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; color: rgb(116, 185, 11); border-color: rgb(229, 243, 208); background-image: -webkit-linear-gradient(left, rgb(230, 249, 202), rgb(207, 233, 167)); background-color: rgb(255, 255, 220);">
+        <p style="text-align: center; border-color: rgb(229, 243, 208); color: inherit;">
+            薪水按能力可调节，具体面谈
+        </p>
+        <p style="text-align: center; border-color: rgb(229, 243, 208); color: inherit;">
+            经验不低于一年
+        </p>
+    </section>
+</section>
+<section class="135editor">
+    <fieldset style="margin: 96px 16px 16px; border: 1px solid rgb(159, 136, 127); text-align: center; border-radius: 8px; font-size: 18px; font-weight: inherit; text-decoration: inherit; box-sizing: border-box; padding: 0px;">
+        <section style="margin: -3.3em auto 0px; color: inherit;">
+            <img src="./images/0(14)" style="background:none 0% 0% repeat scroll rgb(255, 255, 255); border-radius:100%; border:2px solid rgb(159, 136, 127); box-shadow:rgb(201, 201, 201) 0px 2px 2px 2px; box-sizing:border-box; color:inherit; height:108px; width:108px"/>
+        </section>
+        <section class="135brush" data-brushtype="text" data-style="text-align: left; font-size: 14px; color: inherit;" style="margin: 8px 15px; line-height: 1.4; box-sizing: border-box; color: inherit;">
+            <p style="text-align: left; font-size: 14px; color: inherit;">
+                小微编辑器是非常好用的图文编辑工具，这里有很丰富的图文排版格式，图片素材，全文模板。
+            </p>
+        </section>
+        <section style="margin: 10px 15px; border-top-width: 1px; border-top-style: solid; border-color: rgb(159, 136, 127); box-sizing: border-box; color: inherit;">
+            <p style="color: inherit;">
+                <img src="https://mmbiz.qlogo.cn/mmbiz/0v3xAI0hnUjhWDwPJHGhJFDCKLg1nTcFzicT2OxgE7GiaiarjWgkBqJfeXz7bU0qCsprL3C9WICNrZatLtfturz8Q/0" style="color:inherit; font-size:18px; font-weight:inherit; height:200px; line-height:inherit; margin-bottom:0.3em; margin-left:auto; margin-right:auto; text-decoration:inherit; visibility:visible !important; width:200px"/>
+            </p>
+        </section>
+    </fieldset>
+</section>
+<section class="135editor">
+    <fieldset style="margin: 0px; padding: 0px; border: 0px; max-width: 100%; text-align: center; word-wrap: break-word !important; box-sizing: border-box !important;">
+        <section style="max-width: 100%; display: inline-block; word-wrap: break-word !important; box-sizing: border-box !important; color: inherit;">
+            <section style="font-size: 16.3636360168457px; max-width: 100%; display: inline-block; word-wrap: break-word !important; box-sizing: border-box !important; color: inherit;">
+                <p style="margin-top: 0px; margin-bottom: 0px; max-width: 100%; word-wrap: normal; min-height: 1em; white-space: pre-wrap; box-sizing: border-box !important; color: inherit;">
+                    <strong style="box-sizing:border-box !important; color:inherit; max-width:100%; word-wrap:break-word !important">·END·</strong><br style="max-width: 100%; word-wrap: break-word !important; box-sizing: border-box !important; color: inherit;"/>&nbsp;
+                </p>
+            </section>
+            <section class="135title" style="max-width: 100%; margin: 0.2em 0.5em 0.1em; color: rgb(71, 193, 168); font-weight: inherit; text-align: inherit; text-decoration: inherit; word-wrap: break-word !important; box-sizing: border-box !important; border-color: rgb(71, 193, 168);">
+                <span style="font-size:20px"><strong style="border-color:rgb(71, 193, 168); box-sizing:border-box !important; color:inherit; max-width:100%; word-wrap:break-word !important"><span style="border-color:rgb(71, 193, 168); box-sizing:border-box !important; color:inherit; line-height:32.7272720336914px; max-width:100%; word-wrap:break-word !important">求贤招新</span></strong></span>
+            </section>
+            <section style="font-size: 16.3636360168457px; max-width: 100%; width: 208px; border-top-style: solid; border-top-width: 1px; border-top-color: black; line-height: 1; word-wrap: break-word !important; box-sizing: border-box !important; color: inherit;"></section>
+            <section class="135brush" data-brushtype="text" style="font-size: 1em; max-width: 100%; margin: 0.5em 1em; line-height: 1; font-weight: inherit; text-align: inherit; text-decoration: inherit; color: rgb(71, 193, 168); word-wrap: break-word !important; box-sizing: border-box !important; border-color: rgb(71, 193, 168);">
+                <span style="border-color:rgb(71, 193, 168); box-sizing:border-box !important; color:inherit; font-size:16.3636360168457px; max-width:100%; word-wrap:break-word !important">BY小编</span>
+            </section><span style="background-color:rgb(71, 193, 168); border-radius:0.3em; box-shadow:rgb(16, 146, 113) 0.1em 0.1em 0.1em; box-sizing:border-box !important; color:rgb(255, 255, 255); display:inline-block; font-size:1em; font-weight:inherit; max-width:100%; padding:0.3em; text-align:inherit; text-decoration:inherit; word-wrap:break-word !important">微信号：syxw361</span>
+        </section>
+    </fieldset>
+</section>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="padding: 0px; color: rgb(62, 62, 62); line-height: 25px; font-family: 微软雅黑; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);"><section style="line-height: 1.4em; margin-left: 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><span class="wxqq-bg" style="padding: 0.2em 0.5em; border-radius: 0.3em; text-align: center; color: rgb(255, 255, 255); font-family: inherit; font-size: 0.8em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(0, 187, 236);">这输入标题</span>&nbsp;<span style="padding: 0.2em 0.5em; border-radius: 1.2em; height: 1.2em; color: rgb(255, 255, 255); line-height: 1.2em; font-family: inherit; font-size: 0.8em; margin-left: 0.3em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(204, 204, 204);">关注我</span></section><section style="padding: 1.4em 1em 1em; border-radius: 0.3em; border: 1px solid rgb(192, 200, 209); color: rgb(51, 51, 51); font-family: inherit; font-size: 1em; margin-top: -0.7em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important; background-color: rgb(239, 239, 239);">可在这输入内容，欢迎使用关注小微在线编辑助手，微信编辑首选。</section></section>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="margin: 10px 0px; padding: 10px; border-radius: 5px !important; border: 3px dotted rgb(0, 187, 236); font-weight: normal;"><h3 style="margin: 0px; color: rgb(89, 89, 89); font-size: 14px;"><span class="wxqq-bg" style="padding: 2px 5px; border-radius: 5px !important; color: rgb(255, 255, 255); font-size: 14px; margin-right: 15px; background-color: rgb(0, 187, 236);">关注我</span>微信号：<span class="wxqq-bg" style="padding: 2px 5px; border-radius: 5px !important; color: rgb(255, 255, 255); font-size: 14px; background-color: rgb(0, 187, 236);">免费中国</span></h3><p style="margin: 10px 0px 5px;">微信公众号简介，欢迎使用关注小微在线编辑助手！</p></blockquote>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                                                    <div class="tab_con dn" id="tab8">
+                            <ul class="content clearfix">
+                                <li>
+                                    <div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/mCrtgZyr0Iy69oDeF0P22n6Q9T6AiaqA3hLx23GkBTEicwXxNNxnIG1DpqEuB4ThO9tp8y7BxFDlgiaicD8oU5rBfw/0"></p>                                    </div>
+                                </li><li><div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/EzZd7GexockMOwLBPsSrHPibzdb3YXwYPJhEtQp3v8xMzbbjADYBgrrPibu5ncj7INZHbN3GRH0EZmrAASPNOzVg/0"></p>                                    </div>
+                                </li><li><div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/fUyb3aRu3LWR5bWicuRmsicoznGVUotOBibwWNHwat37LwA33kffdpNy9vaBup92FWMRElnsPMDiaSTDZ2Yzr0NWng/0"></p>                                    </div>
+                                </li><li><div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/QFe3icW521aboyiaicAmqlKE6Bkzxm2yqA23ibmEyWHnw0wx2NibJiaPKz5SdhOwEhLsYQrDicC3cv29UYVmhGMedGJfA/0"></p>                                    </div>
+                                </li><li><div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/QFe3icW521aboyiaicAmqlKE6Bkzxm2yqA2JiahBq2TKza2fmx8mIK8BNsvniaMYrnqyUCibx0PJx7GWYia59j7eV8xHg/0"></p>                                    </div>
+                                </li><li><div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/uuOCyOApya1akRzibskYRV2UcnUzj5UcpPDjPQSEVeKMXAj2wMjcc6gogeYTEh2ebLhicEiaDwsgVicVQNCOkAwtRw/0"></p>                                    </div>
+                                </li><li><div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/KXR88d9x9OOnxibeNCue3LlDJiboJkb2kD7wAXhlrRCfxE40SLRCic3wkib8SZaSmtrgCCBhkBticEc72DNB4TCEJhQ/0"></p>                                    </div>
+                                </li><li><div class="itembox">
+                                        <p><img style="width: 100%;" src="http://mmbiz.qpic.cn/mmbiz/2wr24BplYic19podNT2bcejr96QcS4Y5ahgH1CQApibK6IHwxFeVa1e3ZfuoZHRcrHLWruK6bTOPqOEricE7k9VoA/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section><section style="margin: 0px; line-height: 1.4em; font-size: 1em;"><section style="line-height: 1em; font-size: 2.7em; float: left;">曾经</section>有一篇超赞的微文，我没有去关注，等到搜不到的时候才后悔莫及。如果上天给我一次再来的机会的话，我会对Ta说6个字：我关注我分享，如果要在这个分享上加一个次数的话，我希望是：1万遍</section></section>                                    </div>
+                                </li><li>
+                                    <div class="tembox">
+                                        <p><img src="https://mmbiz.qlogo.cn/mmbiz/FQjuxQK4DoD8Z9Cp20zaiaEe0lhyAgqf6pRqB93iaquBawMBzUV0vpL3VH1pmrVFZEo0j9TThcw961NUel6iaCJiag/0"></p>                                    </div>
+                                </li><li>
+                                    <div class="itembox">
+                                        <section style="display: inline-block; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><section style="margin: 0.2em 0.5em 0.1em; color: rgb(42, 52, 58); line-height: 1; font-family: inherit; font-size: 1.8em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">小微团队 </strong></section><section style="line-height: 1; border-top-color: rgb(0, 0, 0); border-top-width: 1px; border-top-style: solid; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"></section><section style="margin: 0.5em 1em; text-align: center; color: rgb(120, 124, 129); line-height: 1; font-family: inherit; font-size: 1em; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;"><strong style="-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">师院小微 <span style="color: rgb(155, 187, 89); -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;">http://mp.btxiaowei.net</span></strong></section></section>                                    </div>
+                                </li>                                <br><br>
+                            </ul>
+                        </div>
+                                                </div>
+                    </div> <a href="#" target="_blank" title="青城老鬼">青城老鬼</a> <a title="使用说明" style="COLOR: #a5a5a5; TEXT-DECORATION: underline" href="#" target="_blank"><span style="COLOR: #a5a5a5">使用说明</span></a>
+                    <div class="goto">→</div>
+                </div>
+                <div class="right">
+                    <div id="bdeditor">
+                        <script charset="utf-8" src="ueditor/ueditor.config.js" type="text/javascript"></script>
+                        <script charset="utf-8" src="ueditor/ueditor.all.min.js" type="text/javascript"> </script>
+                        <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+                        <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+                        <script charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js" type="text/javascript"></script>
+                        <script id="editor" style="width: 480px; height: 650px;" type="text/plain"></script>
+                    </div>
+                </div>
+            </div>
+
+  
+        <div id="previewbox">
+                <div style="height: 100%; padding-right: 5px; -ms-overflow-y: scroll;">
+                <div style="line-height: 24px; font-size: 18px; font-weight: 700;">这里填写你的图文标题</div>
+                <div><em style="color: rgb(140, 140, 140); font-size: 12px; font-style: normal;">2020-02-02</em> <a id="post-user" style="color: rgb(96, 127, 166); font-size: 12px;" href="javascript:void(0);">师院小微</a> </div>
+                <div id="preview"></div>
+                </div>
+
+                <div id="phoneclose" style="top: 40px; width: 50px; height: 50px; right: 50px; font-size: 50px; font-weight: 600; position: absolute; cursor: pointer;">X</div>
+        </div>
+
+        <div class="fullshowbox">全屏</div>
+        <div class="fullhidebox">退出</div>
+        <div id="phone">手机预览</div>
+        
+    </div>
+    
+
+<script>
+    function launchFullscreen(a){if(a.requestFullscreen){a.requestFullscreen()}else{if(a.mozRequestFullScreen){a.mozRequestFullScreen()}else{if(a.msRequestFullscreen){a.msRequestFullscreen()}else{if(a.webkitRequestFullscreen){a.webkitRequestFullScreen()}}}}};function exitFullscreen(){if(document.exitFullscreen){document.exitFullscreen()}else{if(document.mozCancelFullScreen){document.mozCancelFullScreen()}else{if(document.webkitExitFullscreen){document.webkitExitFullscreen()}}}};function fullscreenElement(){return document.fullscreenElement||document.webkitCurrentFullScreenElement||document.mozFullScreenElement||null};
+    $(function(){$("#phoneclose").on('click',function(){$("#previewbox").hide()});$("#phone").on('click',function(){if($("#previewbox").css("display")=="block"){$("#previewbox").hide();}else{$("#previewbox").show();}});$(window).on('fullscreenchange webkitfullscreenchange mozfullscreenchange',function(){if(!fullscreenElement()){$('.wxeditor').css({margin:'0'});}});$('.fullshowbox').on('click',function(){$('.wxeditor').css({margin:'50px 0'});launchFullscreen(document.documentElement)});$('.fullhidebox').on('click',function(){$('#wxeditortip,#header').show();exitFullscreen()});var b=["borderTopColor","borderRightColor","borderBottomColor","borderLeftColor"],d=[];$.each(b,function(a){d.push(".itembox .wxqq-"+b[a])});$("#colorpickerbox").ColorPicker({flat:true,color:"#00bbec",onChange:function(a,e,f){$(".itembox .wxqq-bg").css({backgroundColor:"#"+e});$(".itembox .wxqq-color").css({color:"#"+e});$.each(d,function(g){$(d[g]).css(b[g],"#"+e)})}});var c=UE.getEditor("editor",{topOffset:0,autoFloatEnabled:false,autoHeightEnabled:false,autotypeset:{removeEmptyline:true},toolbars:[["source","forecolor","backcolor","bold","italic","underline","strikethrough","fontborder","link","unlink","paragraph","fontfamily","fontsize","fullscreen",],["undo","redo","indent","justifyleft","justifyright","justifycenter","justifyjustify","insertorderedlist","insertunorderedlist","horizontal","removeformat","time","date",],["inserttable","edittable","edittd","insertparagraphbeforetable","insertrow","insertcol","mergeright","mergedown","deleterow","deletecol","splittorows","splittocols","splittocells","deletecaption","inserttitle","mergecells","deletetable",],["emotion","spechars","searchreplace","map","insertvideo","rowspacingtop","rowspacingbottom","pagebreak","insertframe","imagenone","imagecenter","lineheight","edittip ","insertcode","cleardoc","print","preview","selectall",]]});c.ready(function(){c.addListener('contentChange',function(){$("#preview").html(c.getContent()+'<div><a style="font-size:12px;color:#607fa6" href="javascript:void(0);" id="post-user">阅读原文</a> <em style="color:#8c8c8c;font-style:normal;font-size:12px;">阅读 100000+</em><span class="fr"><a style="font-size:12px;color:#607fa6" href="javascript:void(0);">举报</a></span></div>');});$(".itembox").on("click",function(a){c.execCommand("insertHtml","<div>"+$(this).html()+"</div><br />")})});$(".tabs li a").on("click",function(){$(this).addClass("current").parent().siblings().each(function(){$(this).find("a").removeClass("current")});$("#"+$(this).attr("tab")).show().siblings().hide()})});
+</script><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F283e86370fb848e603c03ed4c383c154' type='text/javascript'%3E%3C/script%3E"));
+</script><!--script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"left","bdTop":"250"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script-->
+</body></html>
